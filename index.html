@@ -1,5 +1,30 @@
 <html>
+<head>
+</head>
 <body>
-Hi
+Okay! So, let's test building! Great!!
+
+<!--------- Dev Refresh Script  ------------->
+<!-- TODO move this to its own little file -->
+<script type="text/javascript">
+    var token = 0;
+    function checkRefresh() {
+        fetch("http://localhost:9000/refresh.txt").then(function(response) {
+            return response.text();
+        }).then(function(html) {
+            if (token != html && token != 0) {
+                document.location.reload();
+            }
+            token = html;
+        }).catch(function(err) {
+            console.warn("Can't fetch refresh token!", err);
+        });
+
+        window.setTimeout(checkRefresh, 500);
+    }
+    checkRefresh();
+</script>
+<!--------- Dev Refresh Script  ------------->
+
 </body>
 </htmnl>
