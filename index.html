@@ -3,41 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Test Page</title>
-    <link rel="stylesheet" href="http://localhost:9000/index.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <!-- <link rel="stylesheet" href="http://localhost:9000/css/refresh.css"> -->
+    <link rel="stylesheet" href="/css/refresh.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!--
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Lato&display=swap" rel="stylesheet">
+
+ <!-- <script src="http://localhost:9000/js/dev_refresh.js"></script> -->
+ <script src="/js/dev_refresh.js"></script>
 </head>
-<body>
+<body class="bg-dark">
     <div class="container grid" style="--gap: 10rem">
-        <h1> xxx Wha?</h1>
-        <p> Okay! So, let's test building! Great!! </p>
+        <h1> Test! </h1>
+        <p> It looks like relative paths are okay! </p>
         <p id="refresh" class="white"> ??</p>
         <p class="sr-only"> Okay? </p>
     </div>
 
 
-
-
 <!--------- Dev Refresh Script  ------------->
-<!-- TODO move this to its own little file -->
-<script type="text/javascript">
-    var token = 0;
-    function checkRefresh() {
-        fetch("http://localhost:9000/refresh.txt").then(function(response) {
-            return response.text();
-        }).then(function(html) {
-            document.getElementById("refresh").innerText = html;            
-            if (token != html && token != 0) {
-                document.location.reload();
-            }
-            token = html;
-        }).catch(function(err) {
-            console.warn("Can't fetch refresh token!", err);
-        });
-
-        window.setTimeout(checkRefresh, 1000);
-    }
-    checkRefresh();
-</script>
-<!--------- Dev Refresh Script  ------------->
-
+<script type="text/javascript" src="/js/dev_refresh.js"></script>
 </body>
+
 </htmnl> 

@@ -3,52 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <title>Design System</title>
-    <link rel="stylesheet" href="http://localhost:9000/index.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/refresh.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!--
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Lato&display=swap" rel="stylesheet">
+
 </head>
-<body class="bg-dark ">
-  
-<p id="refresh" class="text-correct"></p>
-<div class = "container">
+<body>
+
+    <p id="refresh"></p>
+
+<div class = "container bg-dark flow">
     <h1> Design System </h1>
-    <section id="colors">
-    <div class="text-dark bg-shuffled">
-        Hello
-    </div>
-    <div class="text-dark bg-correct">
-        World
-    </div>
-    <div class="text-dark bg-correct example-transparent">
-        World
-    </div>
-    <div class="text-title bg-dark">
-        World
-    </div>
+    <section id="colors" class="grid">
+        <h2 class="numbered-title"><span>01</span> Colors</h2>
+        <div  class="bg-dark text-title">
+            <div style="padding: 0.5rem; border: 1px solid white">
+                Background
+            </div>
+        </div>
+
+        <div  class="bg-title text-dark">
+            <div style="padding: 0.5rem; border: 1px solid white">
+                Title
+            </div>
+        </div>
+
+        <div  class="bg-correct text-dark">
+            <div style="padding: 0.5rem; border: 1px solid white">
+                Correct
+            </div>
+        </div>
+
+
+        <div  class="bg-shuffled text-dark">
+            <div style="padding: 0.5rem; border: 1px solid white">
+                Shuffled
+            </div>
+        </div>
     </section>
 
+    <section id="fonts text-light">
+        <h2 class="numbered-title"><span>02</span> Fonts </h2>
+        <div class="flex flow">
+            <div>
+                <h3> Body Text </h3>
+                <div class="fs-400 ff-sans">
+                   A check mark (American English), checkmark (Philippine English), tickmark (Indian English) or tick (Australian, New Zealand English, and British English) is a mark (✓, ✔, etc.) used, primarily in the English-speaking world, to indicate the concept "yes"
+                </div>
+            </div>
+            <div>
+                <h3> Tile Font </h3>
+                <div class="fs-600">
+                   A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+                </div>
+            </div>
+            <div>
+                <h3> Symbols </h3>
+                <div class="fs-500 ff-sans">
+                    &#128472; &check; &#10003; 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tiles">
+        <h2 class="numbered-title"><span>03</span> Tiles </h2>
+        <div class="grid">
+        <div class="word flex">
+            <div class="tile">C</div>
+            <div class="tile">U</div>
+            <div class="tile">B</div>
+            <div class="tile">E</div>
+        </div>
+        <div class="word flex">
+            <div class="tile">Ci</div>
+            <div class="tile">Ub</div>
+            <div class="tile">R</div>
+            <div class="tile">L</div>
+        </div>
+        </div>
+    </section>
+
+    <section id="interactive">
+        <h2 class="numbered-title"><span>04</span> Interactive </h2>
+        <div class="flex">
+            <div style="margin-top:2rem">
+                <a href="#interactive" class="large-button fs-600 ff-sans text-dark bg-title"> Button </a>
+            </div>
+
+        </div>
+    </section>
+
+    <div style="margin:50vh"/>
 </div>
 
-<!--------- Dev Refresh Script  ------------->
-<!-- TODO move this to its own little file -->
-<script type="text/javascript">
-    var token = 0;
-    function checkRefresh() {
-        fetch("http://localhost:9000/refresh.txt").then(function(response) {
-            return response.text();
-        }).then(function(html) {
-            document.getElementById("refresh").innerText = html;            
-            if (token != html && token != 0) {
-                document.location.reload();
-            }
-            token = html;
-        }).catch(function(err) {
-            console.warn("Can't fetch refresh token!", err);
-        });
-
-        window.setTimeout(checkRefresh, 1000);
-    }
-    checkRefresh();
-</script>
-<!--------- Dev Refresh Script  ------------->
+<!-- Dev refresh -->
+<script src="/js/dev_refresh.js"></script>
 
 </body>
 </htmnl> 

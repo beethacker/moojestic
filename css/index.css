@@ -1,0 +1,256 @@
+
+:root {
+    --clr-dark: 15, 0, 30;
+    --clr-light:  200, 200, 200;
+    --clr-title:  200, 200, 50;
+    --clr-correct: 30, 180, 40;
+    --clr-shuffled: 200 100 200; 
+
+     /* font-sizes */
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+    
+    /* font-families */
+    --ff-serif: 'EB Garamond', serif;
+    --ff-sans: 'Lato', sans-serif;
+
+    --flow-space:  0.5rem;
+}
+
+/* set up the body */
+body {
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    color: rgb(var(--clr-light));
+    background-color: darkgrey;
+    line-height: 1.5;
+    min-height: 100vh;
+    
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    color:  rgb(var(--clr-title));    
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+
+/* make images easier to work with */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* general */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.flow > *:not(:first-child) {
+    margin-top: var(--flow-space, 1rem);
+    /*outline: 1px solid red;*/
+}
+
+.container {
+    padding-inline: 2em;
+    max-width: 80rem;
+    margin-inline: auto;
+}
+
+/* For screen reader */
+.sr-only {
+  position: absolute; 
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px; 
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+
+/* Colors */
+.bg-dark {background-color: rgb(var(--clr-dark)); }
+.bg-correct {background-color: rgb(var(--clr-correct)); }
+.bg-shuffled {background-color: rgb(var(--clr-shuffled)); }
+.bg-title {background-color: rgb(var(--clr-title)); }
+.bg-light {background-color: rgb(var(--clr-light)); }
+
+.text-dark {color: rgb(var(--clr-dark)); }
+.text-correct {color: rgb(var(--clr-correct)); }
+.text-shuffled {color: rgb(var(--clr-shuffled)); }
+.text-title {color: rgb(var(--clr-title)); }
+.text-light {color: rgb(var(--clr-light)); }
+
+
+/* Fonts */
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200); }
+
+.ff-serif { font-family: var(--ff-serif); } 
+.ff-sans { font-family: var(--ff-sans); } 
+
+.tile-font { 
+    font-size: var(--fs-600); 
+    font-family: var(--ff-serif);
+}
+
+
+
+/* Examples */
+
+.example-transparent { background-color: rgba(var(--clr-correct), 0.5); }
+.numbered-title {
+    color: rgb(var(--clr-title));
+    font-size: var(--fs-600);
+    padding-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.numbered-title span {
+    color: rgba(var(--clr-light), 0.5);
+    margin-right: .5em;
+}
+
+/* Components */
+
+.large-button {
+    position: relative;
+    display:  grid;
+    place-items:  center;
+    border-radius: 0.6em;
+    padding: 0.3em;
+    text-decoration: none;
+    aspect-ratio: 2;
+    z-index: 1;
+}
+
+/*
+.large-button:hover {
+    border: 0.7em solid white;
+}*/
+
+.large-button::after {
+    content:  '';
+    position: absolute;
+    background: rgba(var(--clr-correct), 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    padding: 0.6em;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 500ms ease-out, transform 500ms ease-out;
+}
+
+ /* NOTE: Animate on transforms, not width and height to avoid page reflow */
+.large-button:hover::after {
+    opacity: 1;
+    transform: scale(1.1); 
+}
+
+.tile {
+    background-color: rgb(var(--clr-light));
+    color:  rgb(var(--clr-dark));
+    font-size: var(--fs-700);
+    font-family: var(--ff-serif);
+    border-radius: 0.25em;
+    width: 1.25em;
+    height: 1.5em;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.word {
+    display: flex;
+    margin: 0.5em 0.5em;
+}
+
