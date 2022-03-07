@@ -1,0 +1,8 @@
+{
+    "answer": "test",
+    "mode": "count",
+    "guesses": [
+        ["bats", 1, 1, "..@#"],
+        ["cows", 2, 1, "@.##"]
+    ]
+}

@@ -14,19 +14,69 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">-->
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Lato&display=swap" rel="stylesheet">
 
- <!-- <script src="http://localhost:9000/js/dev_refresh.js"></script> -->
- <script src="/js/dev_refresh.js"></script>
 </head>
-<body class="bg-dark">
-    <div class="container grid" style="--gap: 10rem">
-        <h1> Test! </h1>
-        <p> It looks like relative paths are okay! </p>
-        <p id="refresh" class="white"> ??</p>
-        <p class="sr-only"> Okay? </p>
-    </div>
+<body>
+
+<div class="container bg-dark">
+    <h1> TEST </h1>
+    <p> Okay! So, let's try pulling in some data! </p>
+    <div id="puzzle" class="grid"/>
+</div>
+
+<script type="text/javascript">
+
+function getColor(c) {
+    if (c == "#") {
+        return "bg-correct";
+    }
+    if (c == "@") {
+        return "bg-shuffled";
+    }
+    return "bg-light";
+}
+        
+function letterTile(color_class, letter) {
+    return `<div class="letter tile ${color_class}"> ${letter} </div>`;
+}        
+
+function addGuess(div, guess, doSlotColors) {
+    console.log("adding guess: " + guess[0]);
+    console.log("slot colors?" + doSlotColors);
+    var word = guess[0];
+    var wordDiv = '<div class="word flex">';
+    for (var i = 0; i < word.length; i++) {
+        var color = doSlotColors ? getColor(guess[3][i]) : "bg-light";
+        wordDiv += letterTile(color, word[i]);
+    }
+    wordDiv += "</div>";
+    div.insertAdjacentHTML('afterbegin', wordDiv);
+}
+    
+function setPuzzle(json) {
+    var div = document.getElementById("puzzle");
+
+    var guesses = json["guesses"];
+    div.innerText = `hi ${guesses[0][0]}`;
+    for (var i = 0; i < guesses.length; i++) {
+        addGuess(div, guesses[i], json["mode"]=="slot");
+    }
+}
+
+function loadPuzzle(name) {
+    fetch("/data/" + name).then(function(response) {
+        return response.json();
+    }).then(setPuzzle).catch(function(err) {
+        console.warn("Can't fetch data: " + name);
+    });
+}
+
+loadPuzzle("test.json");
+
+</script>
 
 
 <!--------- Dev Refresh Script  ------------->
+<p id="refresh"/>
 <script type="text/javascript" src="/js/dev_refresh.js"></script>
 </body>
 

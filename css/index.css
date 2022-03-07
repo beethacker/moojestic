@@ -28,9 +28,9 @@ body {
     font-family: var(--ff-sans-normal);
     font-size: var(--fs-400);
     color: rgb(var(--clr-light));
-    background-color: darkgrey;
+    /*background-color: darkgrey;*/
+    background-color: black;
     line-height: 1.5;
-    min-height: 100vh;
     
     display: grid;
     grid-template-rows: min-content 1fr;
@@ -131,6 +131,7 @@ select {
     padding-inline: 2em;
     max-width: 80rem;
     margin-inline: auto;
+    min-height: 100vh;
 }
 
 /* For screen reader */
@@ -240,6 +241,7 @@ select {
 .letter {
     font-size: var(--fs-700);
     font-family: var(--ff-serif);
+    text-transform: uppercase;
 }
 
 .tile {
