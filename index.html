@@ -14,63 +14,32 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">-->
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Lato&display=swap" rel="stylesheet">
 
+<script type="text/javascript" src="/js/render.js"></script>
+
 </head>
 <body>
 
 <div class="container bg-dark">
     <h1> TEST </h1>
     <p> Okay! So, let's try pulling in some data! </p>
+    <p id="date"> DATE </p>
     <div id="puzzle" class="grid"/>
 </div>
 
 <script type="text/javascript">
 
-function getColor(c) {
-    if (c == "#") {
-        return "bg-correct";
-    }
-    if (c == "@") {
-        return "bg-shuffled";
-    }
-    return "bg-light";
-}
-        
-function letterTile(color_class, letter) {
-    return `<div class="letter tile ${color_class}"> ${letter} </div>`;
-}        
+loadPuzzleByName("test.json");
 
-function addGuess(div, guess, doSlotColors) {
-    console.log("adding guess: " + guess[0]);
-    console.log("slot colors?" + doSlotColors);
-    var word = guess[0];
-    var wordDiv = '<div class="word flex">';
-    for (var i = 0; i < word.length; i++) {
-        var color = doSlotColors ? getColor(guess[3][i]) : "bg-light";
-        wordDiv += letterTile(color, word[i]);
-    }
-    wordDiv += "</div>";
-    div.insertAdjacentHTML('afterbegin', wordDiv);
-}
-    
-function setPuzzle(json) {
-    var div = document.getElementById("puzzle");
+//Okay. I need to convert the date to a number
+var batchStart = 10;
+var batchCount = 14;
 
-    var guesses = json["guesses"];
-    div.innerText = `hi ${guesses[0][0]}`;
-    for (var i = 0; i < guesses.length; i++) {
-        addGuess(div, guesses[i], json["mode"]=="slot");
-    }
-}
+var birthday = new Date("2022-03-02");
+var msPerDay = 24*60*60*1000;
+var time = new Date();
+var diff = Math.floor((time - birthday) / msPerDay);
 
-function loadPuzzle(name) {
-    fetch("/data/" + name).then(function(response) {
-        return response.json();
-    }).then(setPuzzle).catch(function(err) {
-        console.warn("Can't fetch data: " + name);
-    });
-}
-
-loadPuzzle("test.json");
+document.getElementById("date").innerText = "Look for puzzle: " + (batchStart + diff);
 
 </script>
 

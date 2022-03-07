@@ -4,7 +4,8 @@ if (document.location.href.includes("localhost")) {
     console.log("Enabling refresh!");
     var refreshToken = 0;
     function checkRefresh() {
-        fetch("http://localhost:9000/refresh.txt").then(function(response) {
+        console.log("refresh?");
+        fetch("http://localhost:9000/refresh.txt", {cache: "no-store"}).then(function(response) {
             return response.text();
         }).then(function(html) {
             var element = document.getElementById("refresh");
@@ -12,6 +13,7 @@ if (document.location.href.includes("localhost")) {
                 element.innerText = "Refresh:" + html;            
             }
             if (refreshToken != html && refreshToken != 0) {
+                console.log("Reload!");
                 document.location.reload(true);
             }
             refreshToken = html;
@@ -19,7 +21,7 @@ if (document.location.href.includes("localhost")) {
             console.warn("Can't fetch refresh token!", err);
         });
 
-        window.setTimeout(checkRefresh, 1000);
+        window.setTimeout(checkRefresh, 5000);
     }
     checkRefresh();
 }

@@ -4,7 +4,7 @@
     --clr-light:  200, 200, 200;
     --clr-title:  200, 200, 50;
     --clr-correct: 30, 180, 40;
-    --clr-shuffled: 200 100 200; 
+    --clr-shuffled: 200, 100, 200; 
 
      /* font-sizes */
     --fs-900: 9.375rem;
@@ -12,6 +12,7 @@
     --fs-700: 3.5rem;
     --fs-600: 2rem;
     --fs-500: 1.75rem;
+    --fs-450: 1.5rem;
     --fs-400: 1.125rem;
     --fs-300: 1rem;
     --fs-200: 0.875rem;
@@ -21,11 +22,13 @@
     --ff-sans: 'Lato', sans-serif;
 
     --flow-space:  0.5rem;
+
+    --tile-border: 5px;
 }
 
 /* set up the body */
 body {
-    font-family: var(--ff-sans-normal);
+    font-family: var(--ff-sans);
     font-size: var(--fs-400);
     color: rgb(var(--clr-light));
     /*background-color: darkgrey;*/
@@ -161,6 +164,11 @@ select {
 .text-title {color: rgb(var(--clr-title)); }
 .text-light {color: rgb(var(--clr-light)); }
 
+.border-dark {border: var(--tile-border) solid rgb(var(--clr-dark)); }
+.border-correct {border: var(--tile-border) solid rgb(var(--clr-correct)); }
+.border-shuffled {border: var(--tile-border) solid rgb(var(--clr-shuffled)); }
+.border-title {border: var(--tile-border) solid rgb(var(--clr-title)); }
+.border-light {border: var(--tile-border) solid rgb(var(--clr-light)); }
 
 /* Fonts */
 .fs-900 { font-size: var(--fs-900); }
@@ -220,7 +228,7 @@ select {
 .large-button::after {
     content:  '';
     position: absolute;
-    background: rgba(var(--clr-correct), 0.7);
+    background: rgba(var(--clr-shuffled), 0.7);
     top: 0;
     left: 0;
     right: 0;
@@ -239,6 +247,7 @@ select {
 }
 
 .letter {
+    position: relative;
     font-size: var(--fs-700);
     font-family: var(--ff-serif);
     text-transform: uppercase;
@@ -277,4 +286,14 @@ select {
 
 .shuffled {
     background-color: rgb(var(--clr-shuffled));
+}
+
+.letter > .answer {
+    position: absolute;
+    /*background-color: rgb(var(--bg-light));*/
+    font-size: var(--fs-400);
+    top: calc(var(--tile-border) * -1);
+    left: calc(var(--tile-border) * -1);
+    vertical-align: middle;
+    padding: 0.1em;
 }
