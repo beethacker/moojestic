@@ -237,11 +237,13 @@ select {
     transform: scale(1.1); 
 }
 
-.tile {
-    background-color: rgb(var(--clr-light));
-    color:  rgb(var(--clr-dark));
+.letter {
     font-size: var(--fs-700);
     font-family: var(--ff-serif);
+}
+
+.tile {
+    color: rgb(var(--clr-dark));
     border-radius: 0.25em;
     width: 1.25em;
     height: 1.5em;
@@ -251,6 +253,26 @@ select {
 
 .word {
     display: flex;
-    margin: 0.5em 0.5em;
+    margin: 0.9em 0.5em;
 }
 
+.answer-grid {
+    --gap: 0.0em;
+}
+
+.answer-row {
+    --gap: 0.25em;
+}
+
+.answer {
+    border-radius: 0.25em;
+    font-weight: bolder;
+}
+
+.correct {
+    background-color: rgb(var(--clr-correct));
+}
+
+.shuffled {
+    background-color: rgb(var(--clr-shuffled));
+}
