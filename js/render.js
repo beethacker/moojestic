@@ -1,4 +1,63 @@
 
+const SlotType = {
+    NONE: 0,
+    CORRECT: 1,
+    SHUFFLED: 2
+} 
+
+function histogram(word) {
+    var result = {};
+    for (var i = 0; i < word.length; i++) {
+        var c = word[i];
+        if (result[c] === undefined) {
+            result[c] = 0;
+        }
+        result[c]++;
+    }
+    return result;
+}
+
+function computeSlots(answer, guess) {
+    var histA = histogram(answer);
+    var slots = Array(answer.length).fill(SlotType.NONE);
+
+    for (var i = 0; i < guess.length; i++) {
+        if (answer[i] == guess[i]) {
+            slots[i] = SlotType.CORRECT;
+            histA[answer[i]]--;
+        }
+    }
+
+    for (var i = 0; i < guess.length; i++) {
+        if (slots[i] != SlotType.CORRECT) {
+            var c = guess[i];
+            if (histA[c] > 0) {
+                histA[c]--;
+                slots[i] = SlotType.SHUFFLED;
+            }
+        }
+    }
+
+    return slots;
+}
+
+function computeCountsFromSlots(slots) {
+    var correct = 0;
+    var shuffled = 0;
+    for (var i = 0; i < slots.length; i++) {
+        switch(slots[i]) {
+            case SlotType.CORRECT:
+                correct++;
+                break;
+
+            case SlotType.SHUFFLED:
+                shuffled++;
+                break;
+        }
+    }
+    return [correct, shuffled];
+}
+
 function getColor(c) {
     if (c == "#") {
         return "bg-correct";
@@ -26,19 +85,23 @@ function createAnswerGrid(correct, shuffled) {
     return div;
 }
         
-function createGuessDiv(guess, doSlotColors) {
+function createGuessDiv(answer, word, insetSlots) {
     var div = document.createElement('div');
+    var slots = computeSlots(answer, word);
+    var counts = computeCountsFromSlots(slots);
     div.className = "word flex";
-    var word = guess[0];
     for (var i = 0; i < word.length; i++) {
-        var color = doSlotColors ? getColor(guess[3][i]) : "bg-light";
+        var color = "bg-light";
+        // var color = doSlotColors ? getColor(guess[3][i]) : "bg-light";
         var letter = document.createElement('div');
         letter.className = "letter tile " + color;
-        letter.innerText = guess[0][i];
+        letter.innerText = word[i];
         div.append(letter);
     }
 
-    div.append(createAnswerGrid(guess[1], guess[2]));
+    if (!insetSlots) {
+        div.append(createAnswerGrid(counts[0], counts[1]));
+    }
     return div;
 }
 
@@ -46,18 +109,23 @@ function loadPuzzleByName(name) {
     fetch("/data/" + name).then(function(response) {
         return response.json();
     }).then(setPuzzle).catch(function(err) {
-        console.warn("Can't fetch data: " + name);
+        console.warn("Can't fetch data: " + name + ":" + err);
     });
 }
 
 function setPuzzle(json) {
     var div = document.getElementById("puzzle");
 
-    var guesses = json["guesses"];
-    div.innerText = `hi ${guesses[0][0]}`;
+    var answer = json["answer"];
+    var guesses = json["clues"];
+    div.innerText = JSON.stringify(guesses);
     for (var i = 0; i < guesses.length; i++) {
-        // addGuess(div, guesses[i], json["mode"]=="slot");
-        div.append(createGuessDiv(guesses[i], json["mode"]=="slot"));
+        if (json["mode"]=="slot") {
+            div.append(createGuessDiv(answer, guesses[i], true));
+        }
+        else if (json["mode"]=="count") {
+            div.append(createGuessDiv(answer, guesses[i], false));
+        }
     }
 }
 
