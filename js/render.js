@@ -91,11 +91,22 @@ function createGuessDiv(answer, word, insetSlots) {
     var counts = computeCountsFromSlots(slots);
     div.className = "word flex";
     for (var i = 0; i < word.length; i++) {
-        var color = "bg-light";
-        // var color = doSlotColors ? getColor(guess[3][i]) : "bg-light";
         var letter = document.createElement('div');
-        letter.className = "letter tile " + color;
+        letter.className = "letter tile bg-light";
         letter.innerText = word[i];
+        if (insetSlots) {
+            switch(slots[i]) {
+                case SlotType.CORRECT:
+                    letter.className += " border-correct";
+                    letter.insertAdjacentHTML('beforeend', '<div class="answer tile correct">&#10004;</div>');
+                    break;
+                case SlotType.SHUFFLED:
+                    letter.className += " border-shuffled";
+                    letter.insertAdjacentHTML('beforeend', '<div class="answer tile shuffled">⭯</div>');
+                    break;
+            }
+        }
+
         div.append(letter);
     }
 
@@ -118,7 +129,6 @@ function setPuzzle(json) {
 
     var answer = json["answer"];
     var guesses = json["clues"];
-    div.innerText = JSON.stringify(guesses);
     for (var i = 0; i < guesses.length; i++) {
         if (json["mode"]=="slot") {
             div.append(createGuessDiv(answer, guesses[i], true));

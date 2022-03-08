@@ -1,5 +1,5 @@
 {
     "answer": "test",
-    "mode": "count",
+    "mode": "slot",
     "clues": ["bats", "tall", "mess", "tote"]
 }
