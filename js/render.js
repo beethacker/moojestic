@@ -77,11 +77,13 @@ function createAnswerRow(n, text) {
     return div;
 }
 
+const SHUFFLE_TILE = '<img class="answer tile shuffled" src="/img/move_button_transparent.png"></img>';
+const CORRECT_TILE = '<div class="answer tile correct">&#10004;</div>';
 function createAnswerGrid(correct, shuffled) {
     var div = document.createElement('div');
     div.className = "grid answer-grid";
-    div.append(createAnswerRow(correct, '<div class="answer tile correct">&#10004;</div>'));
-    div.append(createAnswerRow(shuffled, '<div class="answer tile shuffled">⭯</div>'));
+    div.append(createAnswerRow(correct,CORRECT_TILE));
+    div.append(createAnswerRow(shuffled, SHUFFLE_TILE));
     return div;
 }
         
@@ -98,11 +100,11 @@ function createGuessDiv(answer, word, insetSlots) {
             switch(slots[i]) {
                 case SlotType.CORRECT:
                     letter.className += " border-correct";
-                    letter.insertAdjacentHTML('beforeend', '<div class="answer tile correct">&#10004;</div>');
+                    letter.insertAdjacentHTML('beforeend', CORRECT_TILE);
                     break;
                 case SlotType.SHUFFLED:
                     letter.className += " border-shuffled";
-                    letter.insertAdjacentHTML('beforeend', '<div class="answer tile shuffled">⭯</div>');
+                    letter.insertAdjacentHTML('beforeend', SHUFFLE_TILE);
                     break;
             }
         }

@@ -41,6 +41,11 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+    font-size:  var(--fs-700);
+    text-decoration: underline;
+}
+
 h1,
 h2,
 h3,
@@ -296,4 +301,12 @@ select {
     left: calc(var(--tile-border) * -1);
     vertical-align: middle;
     padding: 0.1em;
+}
+
+.margin-in {
+    margin: 0rem 5rem;
+}
+
+.title-bar {
+    /*outline: 1px solid yellow;*/
 }

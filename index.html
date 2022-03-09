@@ -18,17 +18,20 @@
 
 </head>
 <body>
-
 <div class="container bg-dark">
-    <h1> TEST </h1>
-    <p> Okay! So, let's try pulling in some data! </p>
-    <p id="date"> DATE </p>
-    <div id="puzzle" class="grid"/>
+    <div class="title-bar flex"><img src="/img/cow_icon.png"/>
+        <div class="grid" style="--gap: -1.0em">
+            <h1>Moojestic </h1>
+            <p id="date"> DATE </p>
+        </div>
+    </div>
+    <div class="margin-in">
+        <div id="puzzle" class="grid"></div>
+        </div>
 </div>
 
 <script type="text/javascript">
 
-loadPuzzleByName("test.json");
 
 //Okay. I need to convert the date to a number
 var batchStart = 10;
@@ -39,7 +42,8 @@ var msPerDay = 24*60*60*1000;
 var time = new Date();
 var diff = Math.floor((time - birthday) / msPerDay);
 
-document.getElementById("date").innerText = "Look for puzzle: " + (batchStart + diff);
+document.getElementById("date").innerText = "Puzzle #" + (batchStart + diff);
+loadPuzzleByName("test.json");
 
 </script>
 
