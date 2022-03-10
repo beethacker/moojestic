@@ -118,15 +118,9 @@ function createGuessDiv(answer, word, insetSlots) {
     return div;
 }
 
-function loadPuzzleByName(name) {
-    fetch("/data/" + name).then(function(response) {
-        return response.json();
-    }).then(setPuzzle).catch(function(err) {
-        console.warn("Can't fetch data: " + name + ":" + err);
-    });
-}
 
-function setPuzzle(json) {
+function setPuzzle(n, json) {
+    document.getElementById("date").innerText = "Puzzle #" + n;
     var div = document.getElementById("puzzle");
 
     var answer = json["answer"];
@@ -141,10 +135,3 @@ function setPuzzle(json) {
     }
 }
 
-function getPuzzleByDate(date, handler) {
-
-}
-
-function getTodaysPuzzle(handler) {
-    return getPuzzleForDate(new Date(), handler);
-}

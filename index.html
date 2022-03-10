@@ -15,38 +15,53 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Lato&display=swap" rel="stylesheet">
 
 <script type="text/javascript" src="/js/render.js"></script>
+<script type="text/javascript" src="/js/loader.js"></script>
 
 </head>
-<body>
+<body class="bg-dark">
 <div class="container bg-dark">
     <div class="title-bar flex"><img src="/img/cow_icon.png"/>
         <div class="flow" >
             <h1>Moojestic </h1>
-            <p id="date"> DATE </p>
+            <p id="date"> </p>
+            <p id="error"></p>
         </div>
     </div>
     <div class="margin-in">
         <div id="puzzle" class="grid"></div>
-        </div>
+    </div>
+
+    <div>
+    </div>
 </div>
+
 
 <script type="text/javascript">
 
+function setErrorMsg(msg) {
+    document.getElementById("error").innerText = msg;
+}
 
-//Okay. I need to convert the date to a number
-var batchStart = 10;
-var batchCount = 14;
+function onLoadFail(n) {
+  setErrorMsg("Failed to load Puzzle #" + n); 
+}    
 
-var birthday = new Date("2022-03-02");
-var msPerDay = 24*60*60*1000;
-var time = new Date();
-var diff = Math.floor((time - birthday) / msPerDay);
-
-document.getElementById("date").innerText = "Puzzle #" + (batchStart + diff);
-loadPuzzleByName("test.json");
+console.log(window.location.search);
+var todaysPuzzle = todaysPuzzleIndex();
+if (window.location.search.startsWith("?puzzle=")) {
+    var requestedPuzzle = window.location.search.substring(8);
+    if (requestedPuzzle <= todaysPuzzle) {
+        loadPuzzleNumber(requestedPuzzle, onLoadFail);
+    }
+    else {
+        setErrorMsg("Puzzle #" + requestedPuzzle + " is not ready yet. Come back later!");
+    }
+}
+else {
+    loadPuzzleNumber(todaysPuzzle, onLoadFail);
+}
 
 </script>
-
 
 <!--------- Dev Refresh Script  ------------->
 <p id="refresh"/>

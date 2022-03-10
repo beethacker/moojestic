@@ -1,0 +1,30 @@
+START=1
+{"answer":"tutu", "mode":"slot", "clues":["laud", "taut"]}
+{"answer":"image", "mode":"slot", "clues":["chief", "would", "right", "class"]}
+{"answer":"itself", "mode":"slot", "clues":["idlest"]}
+{"answer":"peace", "mode":"slot", "clues":["about", "april", "verse"]}
+{"answer":"rat", "mode":"count", "clues":["age", "far", "you", "out"]}
+{"answer":"one", "mode":"count", "clues":["cow", "see", "run", "ink"]}
+{"answer":"hair", "mode":"count", "clues":["skin", "life", "iron", "hiss", "same"]}
+{"answer":"lens", "mode":"count", "clues":["link", "farm", "book", "neat", "move", "slip"]}
+{"answer":"ice", "mode":"slot", "clues":["arc", "bed", "pig"]}
+{"answer":"post", "mode":"slot", "clues":["coat", "slip"]}
+{"answer":"not", "mode":"slot", "clues":["lag", "cut", "run", "lip", "end"]}
+{"answer":"mud", "mode":"count", "clues":["ore", "sum", "sky", "dry"]}
+{"answer":"say", "mode":"count", "clues":["all", "sir", "arc", "she", "man"]}
+{"answer":"our", "mode":"count", "clues":["one", "him", "rub", "set", "bud"]}
+{"answer":"guard", "mode":"slot", "clues":["dance", "three", "shale", "lever", "hurry"]}
+{"answer":"money", "mode":"slot", "clues":["widow", "human", "jewel", "flesh", "spade", "wound"]}
+{"answer":"slip", "mode":"count", "clues":["seat", "call", "wild", "jump"]}
+{"answer":"storm", "mode":"slot", "clues":["hurry", "flame", "tight"]}
+{"answer":"milk", "mode":"count", "clues":["pool", "male", "wild", "mine", "nice"]}
+{"answer":"play", "mode":"count", "clues":["been", "upon", "flag", "rate", "much", "whip"]}
+{"answer":"cover", "mode":"slot", "clues":["sound", "still", "input", "shelf", "voice"]}
+{"answer":"whose", "mode":"count", "clues":["water", "flood", "mania"]}
+{"answer":"liquid", "mode":"slot", "clues":["bender", "august", "secret", "middle", "silver"]}
+{"answer":"plan", "mode":"count", "clues":["shut", "knot", "soap", "ship", "pull"]}
+{"answer":"went", "mode":"count", "clues":["hype", "wall", "kind", "then"]}
+{"answer":"flood", "mode":"slot", "clues":["miner", "would", "heavy", "level", "offer"]}
+{"answer":"like", "mode":"count", "clues":["keep", "that", "luck", "clip", "what", "beak"]}
+{"answer":"stop", "mode":"count", "clues":["goes", "path", "nest", "less", "rock"]}
+{"answer":"taxi", "mode":"count", "clues":["boot", "soft", "idea", "undo", "volt", "gray"]}
