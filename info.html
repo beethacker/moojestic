@@ -1,3 +1,118 @@
 <html>
-Explain the rules!
+<head>
+    <meta charset="UTF-8">
+    <title>How to Play</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <!-- <link rel="stylesheet" href="http://localhost:9000/css/refresh.css"> -->
+    <link rel="stylesheet" href="/css/refresh.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!--
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Lato&display=swap" rel="stylesheet">
+
+<script type="text/javascript" src="/js/render.js"></script>
+<script type="text/javascript" src="/js/loader.js"></script>
+
+<link rel="icon" type="image/png" href="/img/cow_icon_32.png"/> 
+</head>
+<body>
+    <div class="container bg-dark flow grid">
+        <h1> How to Play </h1>
+        <p>
+        In each puzzle, there's a mystery word that you're trying to find. Some clue words are provided, and the solution is a word that satisfies all of the clues!
+        </p><p>
+        There are two kinds of puzzles with slightly different clues.
+        </p>
+        <h2> Simple Puzzles </h2>
+        <p>
+        In these puzzles, letters in the clues that are also in the mystery word are marked with a <span class="tile answer correct" style="display: inline-block;">&#10004;</span> or a 
+        <img class="answer tile shuffled" src="/img/move_button_transparent.png" style="display: inline-block;"/>.
+    
+        </p>
+        <div class="word flex">
+            <div class="letter tile bg-light">T</div>
+            <div class="letter tile bg-light border-correct">R
+            <div class="answer tile correct">&#10004;</div>
+            </div>
+            <div class="letter tile bg-light">A </div>
+            <div class="letter tile bg-light border-correct">C
+            <div class="answer tile correct">&#10004;</div>
+        </div>
+            <div class="letter tile bg-light">K</div>
+        </div>
+         <p> A letter with a <span class="tile answer correct" style="display: inline-block;">&#10004;</span> means that letter shows up in the same position in the mysery word. The letter <span class="demo single">R</span> is the second letter and <span class="demo single">C</span> is the fourth.</p>
+         <div class="word flex">
+            <div class="letter tile bg-light">S</div>
+            <div class="letter tile bg-light border-shuffled">P
+                <img class="answer tile shuffled" src="/img/move_button_transparent.png"/>
+            </div>
+            <div class="letter tile bg-light border-shuffled">E
+               <img class="answer tile shuffled" src="/img/move_button_transparent.png"/> 
+            </div>
+            <div class="letter tile bg-light">L</div>
+            <div class="letter tile bg-light">L</div>
+        </div>
+        <p>
+                 A letter with a  <img class="answer tile shuffled" src="/img/move_button_transparent.png" style="display: inline-block;"/> means that letter occurs in the word, but in a different position. <span class="demo single">P</span> and <span class="demo single">E</span> are both in the solution, but the second letter <i>is not</i> <span class="demo single">P</span>!
+        </p>
+        <p> 
+                Putting these two clues together, the solution is 
+        </p>
+        <div class="word flex">
+            <div class="letter tile bg-correct">P</div>
+            <div class="letter tile bg-correct">R </div>
+            <div class="letter tile bg-correct">I </div>
+            <div class="letter tile bg-correct">C</div>
+            <div class="letter tile bg-correct">E</div>
+        </div>
+        <p> 
+                The <span class="demo single">R</span> and <span class="demo single">C</span> occur in the same place as in<span class="demo">TRACK</span>, and the <span class="demo single">P</span> and <span class="demo single">E</span> occur, but in different positions than in <span class="demo">SPELL</span>, so <span class="demo">PRICE</span> fits both clues
+        </p>
+
+        <h2> Classic Puzzles </h2>
+        <p>
+            These puzzles are a little trickier! The <span class="tile answer correct" style="display: inline-block;">&#10004;</span>'s and  <img class="answer tile shuffled" src="/img/move_button_transparent.png" style="display: inline-block;"/>'s aren't attached to specific letters anymore!         
+        </p>
+        <div class="word flex">
+            <div class="letter tile bg-light">O</div>
+            <div class="letter tile bg-light">U </div>
+            <div class="letter tile bg-light">T </div>
+            <div class="grid answer-grid">
+                <div class="flex answer-row">
+                    <div class="answer tile correct">&#10004;</div>
+                </div>
+            </div>
+        </div> 
+        <p>
+            The <span class="tile answer correct" style="display: inline-block;">&#10004;</span> means that one letter is in the correct position. Either the solution starts with <span class="demo single">O</span>, has a second letter <span class="demo single">U</span>, or ends with <span class="demo single">T</span>. Suppose the next clue is:
+        </p>
+           <div class="word flex">
+            <div class="letter tile bg-light">Y</div>           
+            <div class="letter tile bg-light">O</div>
+            <div class="letter tile bg-light">U </div>
+        </div> 
+        <p>
+            None of these letters are in the solution, otherwise, there'd be some <span class="tile answer correct" style="display: inline-block;">&#10004;</span>'s and  <img class="answer tile shuffled" src="/img/move_button_transparent.png" style="display: inline-block;"/>'s. But if there's no <span class="demo single">O</span> or <span class="demo single">U</span>, then the first clue tells us the solution ends with <span class="demo single">T</span>.
+        </p>
+
+        <!--
+        <h2> Double Letters? </h2>
+        <p>
+        When there's a double letter  ...
+        </p>
+    -->
+        <h2> Good Luck! </h2>
+        <p> The answers will always be common words and there should be a mostly unique solution (depending on your vocabulary!!). If you find a second solution that's a pretty common word, then that's a problem with the puzzle! Please let me know!
+        </p>
+
+    </div>
+
+    <!--------- Dev Refresh Script  ------------->
+    <p id="refresh" class="hidden"/>
+    <script type="text/javascript" src="/js/dev_refresh.js"></script>
+    </body>
+</body>
 </html>

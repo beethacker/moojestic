@@ -28,3 +28,4 @@ START=1
 {"answer":"like", "mode":"count", "clues":["keep", "that", "luck", "clip", "what", "beak"]}
 {"answer":"stop", "mode":"count", "clues":["goes", "path", "nest", "less", "rock"]}
 {"answer":"taxi", "mode":"count", "clues":["boot", "soft", "idea", "undo", "volt", "gray"]}
+{"answer": "duck", "mode":"count", "clues":["cube", "code", "book"]}
