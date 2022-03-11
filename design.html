@@ -49,7 +49,7 @@
 
     <section id="fonts text-light">
         <h2 class="numbered-title"><span>02</span> Fonts </h2>
-        <div class="flex flow">
+        <div class="grid">
             <div>
                 <h3> Body Text </h3>
                 <div class="fs-400 ff-sans">
@@ -67,6 +67,8 @@
                 <div class="fs-500 ff-sans">
                     &#128472; &check; &#10003; ✔ ⭯  &#10004;
                     &#8635; 
+                    &#11208; &#11207;
+
                     <img class="bg-correct" src="/img/check_button_transparent.png"/>
                     <img class="bg-shuffled" src="/img/move_button_transparent.png"/>
                 </div>
@@ -125,23 +127,46 @@
     <section id="interactive">
 
         <h2 class="numbered-title"><span>04</span> Interactive </h2>
-        <div class="flex">
-            <div style="margin-top:2rem">
-                <a href="#interactive" class="large-button fs-600 ff-sans text-dark bg-title"> Button </a>
+        <div class="grid">
+            <div class="flex">
+                <div style="margin-top:2rem">
+                    <a href="#interactive" class="large-button fs-600 ff-sans text-dark bg-title"> Button </a>
+                </div>
+            <!-- Nav -->
+            <div>
+                <nav>
+                    <ul class="primary-navigation underline-indicators flex">
+                        <li class="active"><a class="text-dark bg-correct" href="#interactive">Active</a></li>
+                        <li><a class="text-dark bg-title" href="#interactive">Hovered</a></li>
+                        <li><a class="text-dark bg-title" href="#interactive">Idle</a></li>
+                    </ul>
+                </nav>
             </div>
-        <!-- Nav -->
-        <div>
-            <nav>
-                <ul class="primary-navigation underline-indicators flex">
-                    <li class="active"><a class="text-dark bg-correct" href="#interactive">Active</a></li>
-                    <li><a class="text-dark bg-title" href="#interactive">Hovered</a></li>
-                    <li><a class="text-dark bg-title" href="#interactive">Idle</a></li>
-                </ul>
-            </nav>
-        </div>
-        </div>
+            </div>
 
+            <div class="flex" style="margin: 2rem">
+                <input type="text" placeholder="Check Answer" id="answer-input" oninput="test(this)"/>
+                <button class="large-button text-light bg-dark-button" onclick="clearTxt();"> Clear </button>
+            </div>
 
+            <script type="text/javascript">
+                var answerElement = document.getElementById("answer-input");
+                answerElement.setAttribute("maxlength", 4);
+                function test(field) {
+                    console.log("changed to:" + field.value);
+                    if (field.value.toLowerCase() == "cool") {
+                        field.className = "solved";
+                        field.setAttribute("disabled", "disabled");
+                    }
+                    if (field.value.length > 4) {
+                        field.value = field.value.substring(0, 4);
+                    }
+                }
+                function clearTxt() {
+                    answerElement.value = "";
+                }
+            </script>
+        </div>
     </section>
 
     <div style="margin:50vh"/>

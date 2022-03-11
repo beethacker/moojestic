@@ -118,20 +118,3 @@ function createGuessDiv(answer, word, insetSlots) {
     return div;
 }
 
-
-function setPuzzle(n, json) {
-    document.getElementById("date").innerText = "Puzzle #" + n;
-    var div = document.getElementById("puzzle");
-
-    var answer = json["answer"];
-    var guesses = json["clues"];
-    for (var i = 0; i < guesses.length; i++) {
-        if (json["mode"]=="slot") {
-            div.append(createGuessDiv(answer, guesses[i], true));
-        }
-        else if (json["mode"]=="count") {
-            div.append(createGuessDiv(answer, guesses[i], false));
-        }
-    }
-}
-

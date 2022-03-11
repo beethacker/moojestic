@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test Page</title>
+    <title>Moojestic</title>
     <link rel="stylesheet" href="/css/index.css">
     <!-- <link rel="stylesheet" href="http://localhost:9000/css/refresh.css"> -->
     <link rel="stylesheet" href="/css/refresh.css">
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="/js/render.js"></script>
 <script type="text/javascript" src="/js/loader.js"></script>
 
+<link rel="icon" type="image/png" href="/img/cow_icon_32.png"/>
 </head>
 <body class="bg-dark">
 <div class="container bg-dark">
@@ -31,12 +32,48 @@
         <div id="puzzle" class="grid"></div>
     </div>
 
+    <div class="flex margin-top">
+        <input type="text" autocomplete="off" placeholder="Check Answer" id="answer-input" oninput="onAnswerTextChanged(this);"/>
+        <button id="clear-button" class="large-button text-light bg-dark-button" onclick="clearAnswer();"> Clear </button>
+    </div>
     <div>
+        <p id="feedback"></p>
     </div>
 </div>
 
 
 <script type="text/javascript">
+var correctAnswer = "";    
+var answerField = document.getElementById("answer-input");
+var clearButton = document.getElementById("clear-button");
+var feedback = document.getElementById("feedback");
+
+function onAnswerTextChanged(field) {
+    if (field.value.length > correctAnswer.length) {
+        field.value = field.value.substring(0, correctAnswer.length);
+    }
+    if (field.value.length == correctAnswer.length) {
+        if (field.value == correctAnswer) {
+            field.className = "solved";
+            field.setAttribute("disabled", "disabled");
+            clearButton.className = "hidden";
+            feedback.innerText = "You got it!";
+        } 
+        else {
+            feedback.innerText = "Uhhhhh! Nope! Try again!";
+        }
+    }
+    else {
+        feedback.innerText = "";
+    }
+}
+
+function clearAnswer() {
+    answerField.value = "";
+    feedback.innerText = "";
+}
+
+
 
 function setErrorMsg(msg) {
     document.getElementById("error").innerText = msg;
@@ -46,7 +83,6 @@ function onLoadFail(n) {
   setErrorMsg("Failed to load Puzzle #" + n); 
 }    
 
-console.log(window.location.search);
 var todaysPuzzle = todaysPuzzleIndex();
 if (window.location.search.startsWith("?puzzle=")) {
     var requestedPuzzle = window.location.search.substring(8);
@@ -64,7 +100,7 @@ else {
 </script>
 
 <!--------- Dev Refresh Script  ------------->
-<p id="refresh"/>
+<p id="refresh" class="hidden"/>
 <script type="text/javascript" src="/js/dev_refresh.js"></script>
 </body>
 

@@ -1,6 +1,8 @@
 
 :root {
     --clr-dark: 15, 0, 30;
+    --clr-dark-accent: 30, 0, 60;
+    --clr-dark-button: 45, 0, 90;
     --clr-light:  200, 200, 200;
     --clr-title:  200, 200, 50;
     --clr-correct: 30, 180, 40;
@@ -155,9 +157,14 @@ select {
   border: 0;
 }
 
+.hidden {
+    visibility: hidden;
+}
 
 /* Colors */
 .bg-dark {background-color: rgb(var(--clr-dark)); }
+.bg-dark-accent {background-color: rgb(var(--clr-dark-accent)); }
+.bg-dark-button {background-color: rgb(var(--clr-dark-button)); }
 .bg-correct {background-color: rgb(var(--clr-correct)); }
 .bg-shuffled {background-color: rgb(var(--clr-shuffled)); }
 .bg-title {background-color: rgb(var(--clr-title)); }
@@ -245,7 +252,7 @@ select {
 
  /* NOTE: Animate on transforms, not width and height to avoid page reflow */
 .large-button:hover::after {
-    opacity: 1;
+    opacity: 0.3;
     transform: scale(1.1); 
 }
 
@@ -281,6 +288,31 @@ select {
 /* --------------------------------------------*/
 /* Moojestic                                   */
 /* --------------------------------------------*/
+button.large-button {
+    padding: 0em 3rem;
+    border-radius: 20%;
+    border-width: 8px;
+    border: 10px solid rgb(--clr-title);
+}
+
+#answer-input {
+    background-color: rgb(var(--clr-dark-accent));
+    padding: 1rem;
+    color:  rgb(var(--clr-title));
+    border: 0.2em solid rgb(var(--clr-title));
+    border-radius: 1em;
+    font-size: var(--fs-600);
+    font-family: var(--ff-serif);
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+    min-width: 18em;
+    text-align: center;
+}
+
+#answer-input.solved {
+    color:  rgb(var(--clr-correct));
+    border: 0.2em solid rgb(var(--clr-correct));
+}
 
 h1 {
     font-size: var(--fs-800);
@@ -352,6 +384,10 @@ h1, h2, h3 {
 
 .margin-in {
     margin: 1rem 5rem;
+}
+
+.margin-top {
+    margin-top: 5rem;
 }
 
 .title-bar {

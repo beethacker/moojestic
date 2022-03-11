@@ -1,11 +1,29 @@
 
-function loadPuzzleNumber(n, onFail) {
-    var targetPuzzle = "puzz_" + n.toString().padStart(4, '0') + ".json";
+function setPuzzle(n, json) {
+    document.getElementById("date").innerText = "Puzzle #" + n;
+    var div = document.getElementById("puzzle");
 
+    var answer = json["answer"];
+    var guesses = json["clues"];
+    for (var i = 0; i < guesses.length; i++) {
+        if (json["mode"]=="slot") {
+            div.append(createGuessDiv(answer, guesses[i], true));
+        }
+        else if (json["mode"]=="count") {
+            div.append(createGuessDiv(answer, guesses[i], false));
+        }
+    }
+    
+    correctAnswer = answer;
+}
+
+function loadPuzzleNumber(n, onFail) {
+    document.title = "Moojestic #" + n.toString();
+
+    var targetPuzzle = "puzz_" + n.toString().padStart(4, '0') + ".json";
     fetch("/data/" + targetPuzzle).then(function(response) {
         return response.json();
     }).then(function(json){
-        console.log("JSON=" + JSON.stringify(json));
         setPuzzle(n, json);
     }).catch(function(err) {
         console.warn("Can't fetch data: " + n + ":" + err);
@@ -22,3 +40,4 @@ function todaysPuzzleIndex() {
 
     return diff;
 }
+

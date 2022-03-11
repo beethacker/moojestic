@@ -1,6 +1,7 @@
 console.log(document.location.href);
 
 if (document.location.href.includes("localhost")) {
+    //TODO maybe INSERT the refresh tag here?
     console.log("Enabling refresh!");
     var refreshToken = 0;
     function checkRefresh() {
@@ -10,6 +11,7 @@ if (document.location.href.includes("localhost")) {
         }).then(function(html) {
             var element = document.getElementById("refresh");
             if (element) {
+                element.className = "";//unhide
                 element.innerText = "Refresh:" + html;            
             }
             if (refreshToken != html && refreshToken != 0) {
