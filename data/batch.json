@@ -1,11 +1,11 @@
 START=1
-{"answer":"tutu", "mode":"slot", "clues":["laud", "taut"]}
 {"answer":"image", "mode":"slot", "clues":["chief", "would", "right", "class"]}
-{"answer":"itself", "mode":"slot", "clues":["idlest"]}
-{"answer":"peace", "mode":"slot", "clues":["about", "april", "verse"]}
-{"answer":"rat", "mode":"count", "clues":["age", "far", "you", "out"]}
+{"answer":"tutu", "mode":"slot", "clues":["laud", "taut"]}
 {"answer":"one", "mode":"count", "clues":["cow", "see", "run", "ink"]}
+{"answer":"rat", "mode":"count", "clues":["age", "far", "you", "out"]}
+{"answer":"itself", "mode":"slot", "clues":["idlest"]}
 {"answer":"hair", "mode":"count", "clues":["skin", "life", "iron", "hiss", "same"]}
+{"answer":"peace", "mode":"slot", "clues":["about", "april", "verse"]}
 {"answer":"lens", "mode":"count", "clues":["link", "farm", "book", "neat", "move", "slip"]}
 {"answer":"ice", "mode":"slot", "clues":["arc", "bed", "pig"]}
 {"answer":"post", "mode":"slot", "clues":["coat", "slip"]}

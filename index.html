@@ -20,11 +20,17 @@
 <link rel="icon" type="image/png" href="/img/cow_icon_32.png"/>
 </head>
 <body class="bg-dark">
+    <div class="flex top-nav">
+        <a id="prev-button" href="#" class="large-button">&lt;</a>
+        <p id="date" class="fs-450"></p>
+        <a id="next-button" href="#" class="large-button">&gt;</a>
+        <a href="/info.html" class="large-button">?</a>
+    </div>
 <div class="container bg-dark">
+
     <div class="title-bar flex"><img src="/img/cow_icon.png"/>
         <div class="flow" >
             <h1>Moojestic </h1>
-            <p id="date"> </p>
             <p id="error"></p>
         </div>
     </div>
@@ -34,7 +40,7 @@
 
     <div id="answer-area" class="hidden">
         <div class="flex margin-top">
-            <input type="text" autocomplete="off" placeholder="Check Answer" id="answer-input" oninput="onAnswerTextChanged(this);"/>
+            <input type="text" autocomplete="off" placeholder="Answer" id="answer-input" oninput="onAnswerTextChanged(this);"/>
             <button id="clear-button" class="large-button text-light bg-dark-button" onclick="clearAnswer();"> Clear </button>
         </div>
         <div>
@@ -47,9 +53,13 @@
 <script type="text/javascript">
 var loadedPuzzle = {};    
 var correctAnswer = "";    
+var todaysPuzzle = todaysPuzzleIndex();
+var displayPuzzle = todaysPuzzle;
 var answerField = document.getElementById("answer-input");
 var clearButton = document.getElementById("clear-button");
-var feedback = document.getElementById("feedback");
+var feedbackTag = document.getElementById("feedback");
+var prevButton = document.getElementById("prev-button");
+var nextButton = document.getElementById("next-button");
 
 function onAnswerTextChanged(field) {
     if (field.value.length > correctAnswer.length) {
@@ -60,7 +70,7 @@ function onAnswerTextChanged(field) {
             field.className = "solved";
             field.setAttribute("disabled", "disabled");
             clearButton.className = "hidden";
-            feedback.innerText = "You got it!";
+            feedbackTag.innerText = "You got it!";
         } 
         else {
             showErrorFeedback(field.value.toLowerCase(), loadedPuzzle);
@@ -73,7 +83,8 @@ function onAnswerTextChanged(field) {
 
 function clearAnswer() {
     answerField.value = "";
-    feedback.innerText = "";
+    feedbackTag.innerText = "";
+    clearErrorFeedback();
 }
 
 function setErrorMsg(msg) {
@@ -84,18 +95,31 @@ function onLoadFail(n) {
   setErrorMsg("Failed to load Puzzle #" + n); 
 }    
 
-var todaysPuzzle = todaysPuzzleIndex();
 if (window.location.search.startsWith("?puzzle=")) {
-    var requestedPuzzle = window.location.search.substring(8);
-    if (requestedPuzzle <= todaysPuzzle) {
-        loadPuzzleNumber(requestedPuzzle, onLoadFail);
+    displayPuzzle = parseInt(window.location.search.substring(8));
+    if (displayPuzzle <= todaysPuzzle) {
+        loadPuzzleNumber(displayPuzzle, onLoadFail);
     }
     else {
-        setErrorMsg("Puzzle #" + requestedPuzzle + " is not ready yet. Come back later!");
+        setErrorMsg("Puzzle #" + displayPuzzle + " is not ready yet. Come back later!");
     }
 }
 else {
     loadPuzzleNumber(todaysPuzzle, onLoadFail);
+}
+
+if (displayPuzzle < todaysPuzzle) {
+    nextButton.setAttribute("href", "/index.html?puzzle=" + (displayPuzzle+1));
+}
+else {
+    nextButton.className += " hidden";
+}
+
+if (displayPuzzle > 1) {
+    prevButton.setAttribute("href", "/index.html?puzzle=" + (displayPuzzle-1));
+}
+else {
+    prevButton.className += " hidden";
 }
 
 </script>

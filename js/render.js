@@ -187,7 +187,7 @@ function findGuessErrors(userGuess, puzzle) {
 
 function clearErrorFeedback() {
     var puzzle = loadedPuzzle;
-    feedback.innerText = "";
+    feedbackTag.innerText = "";
     for (var i = 0; i < puzzle["clues"].length; i++) {
         guessDivs[puzzle["clues"][i]].classList.remove("error");
     }
@@ -197,12 +197,12 @@ function showErrorFeedback(userGuess, puzzle) {
     clearErrorFeedback();
     var wrong = findGuessErrors(userGuess, puzzle);
     if (wrong.length > 0) {
-        feedback.innerText = "Answer doesn't match some clues!";
+        feedbackTag.innerText = "Answer doesn't match some clues!";
         for (var i = 0; i < wrong.length; i++) {
             guessDivs[wrong[i]].className += " error";
         }
     }
     else {
-        feedback.innerText = "Answer matches all clues, but there's another word!";
+        feedbackTag.innerText = "Answer matches all clues, but there's another word!";
     }
 }
