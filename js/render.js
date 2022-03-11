@@ -1,4 +1,6 @@
 
+var guessDivs = {};
+
 const SlotType = {
     NONE: 0,
     CORRECT: 1,
@@ -115,6 +117,54 @@ function createGuessDiv(answer, word, insetSlots) {
     if (!insetSlots) {
         div.append(createAnswerGrid(counts[0], counts[1]));
     }
+    guessDivs[word] = div;
     return div;
 }
 
+function setPuzzle(n, json) {
+    document.getElementById("date").innerText = "Puzzle #" + n;
+    var div = document.getElementById("puzzle");
+    var answerArea = document.getElementById("answer-area");
+    answerArea.className = "";
+
+    guessDivs = {};
+    var answer = json["answer"];
+    var guesses = json["clues"];
+    for (var i = 0; i < guesses.length; i++) {
+        if (json["mode"]=="slot") {
+            div.append(createGuessDiv(answer, guesses[i], true));
+        }
+        else if (json["mode"]=="count") {
+            div.append(createGuessDiv(answer, guesses[i], false));
+        }
+    }
+    
+    correctAnswer = answer;
+}
+
+
+/* Guess validation */
+function slotsAreEqual(slotsA, slotsB) {
+    return false;
+}
+
+function countsAreEquals(countsA, countsB) {
+    return false;
+}
+
+function checkUserGuessAgainstClue(guess, answer, clue, mode) {
+    return false;
+}
+
+function findGuessErrors(userGuess, puzzle) {
+   var result = {};
+   for (var i = 0; i < puzzle["clues"].length; i++) {
+
+   }
+
+   return result; 
+}
+
+function showErrorFeedback(userGuess, puzzle) {
+    feedback.innerText = "That's not it, keep guessing!";
+}

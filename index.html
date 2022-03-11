@@ -32,17 +32,20 @@
         <div id="puzzle" class="grid"></div>
     </div>
 
-    <div class="flex margin-top">
-        <input type="text" autocomplete="off" placeholder="Check Answer" id="answer-input" oninput="onAnswerTextChanged(this);"/>
-        <button id="clear-button" class="large-button text-light bg-dark-button" onclick="clearAnswer();"> Clear </button>
-    </div>
-    <div>
-        <p id="feedback"></p>
+    <div id="answer-area" class="hidden">
+        <div class="flex margin-top">
+            <input type="text" autocomplete="off" placeholder="Check Answer" id="answer-input" oninput="onAnswerTextChanged(this);"/>
+            <button id="clear-button" class="large-button text-light bg-dark-button" onclick="clearAnswer();"> Clear </button>
+        </div>
+        <div>
+            <p id="feedback"></p>
+        </div>
     </div>
 </div>
 
 
 <script type="text/javascript">
+var loadedPuzzle = {};    
 var correctAnswer = "";    
 var answerField = document.getElementById("answer-input");
 var clearButton = document.getElementById("clear-button");
@@ -60,7 +63,7 @@ function onAnswerTextChanged(field) {
             feedback.innerText = "You got it!";
         } 
         else {
-            feedback.innerText = "Uhhhhh! Nope! Try again!";
+            showErrorFeedback(field.value, loadedPuzzle);
         }
     }
     else {
@@ -72,8 +75,6 @@ function clearAnswer() {
     answerField.value = "";
     feedback.innerText = "";
 }
-
-
 
 function setErrorMsg(msg) {
     document.getElementById("error").innerText = msg;
