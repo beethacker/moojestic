@@ -56,18 +56,18 @@ function onAnswerTextChanged(field) {
         field.value = field.value.substring(0, correctAnswer.length);
     }
     if (field.value.length == correctAnswer.length) {
-        if (field.value == correctAnswer) {
+        if (field.value.toLowerCase() == correctAnswer) {
             field.className = "solved";
             field.setAttribute("disabled", "disabled");
             clearButton.className = "hidden";
             feedback.innerText = "You got it!";
         } 
         else {
-            showErrorFeedback(field.value, loadedPuzzle);
+            showErrorFeedback(field.value.toLowerCase(), loadedPuzzle);
         }
     }
     else {
-        feedback.innerText = "";
+        clearErrorFeedback();
     }
 }
 

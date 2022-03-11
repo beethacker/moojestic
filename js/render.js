@@ -140,31 +140,69 @@ function setPuzzle(n, json) {
     }
     
     correctAnswer = answer;
+    loadedPuzzle = json;
 }
 
 
 /* Guess validation */
 function slotsAreEqual(slotsA, slotsB) {
-    return false;
+    for (var i = 0; i < slotsA.length; i++) {
+        if (slotsA[i] != slotsB[i]) {
+            return false;
+        }
+    }
+    return true;
 }
 
-function countsAreEquals(countsA, countsB) {
-    return false;
+function countsAreEqual(countsA, countsB) {
+    return countsA[0]==countsB[0] && countsA[1]==countsB[1];
 }
 
 function checkUserGuessAgainstClue(guess, answer, clue, mode) {
-    return false;
+    var slotsA = computeSlots(answer, clue);
+    var slotsB = computeSlots(guess, clue);
+    if (mode == "slot") {
+        return slotsAreEqual(slotsA, slotsB);
+    }
+
+    var countsA = computeCountsFromSlots(slotsA);
+    var countsB = computeCountsFromSlots(slotsB);
+    return countsAreEqual(countsA, countsB);
 }
 
 function findGuessErrors(userGuess, puzzle) {
-   var result = {};
+    console.log(JSON.stringify(puzzle));
+   var result = [];
+   var answer = puzzle["answer"];
+   var failCount = 0;
    for (var i = 0; i < puzzle["clues"].length; i++) {
-
+        var clue = puzzle["clues"][i];
+        if (!checkUserGuessAgainstClue(userGuess, answer, clue, puzzle["mode"])) {
+            result.push(clue);
+        }
    }
 
    return result; 
 }
 
+function clearErrorFeedback() {
+    var puzzle = loadedPuzzle;
+    feedback.innerText = "";
+    for (var i = 0; i < puzzle["clues"].length; i++) {
+        guessDivs[puzzle["clues"][i]].classList.remove("error");
+    }
+}
+
 function showErrorFeedback(userGuess, puzzle) {
-    feedback.innerText = "That's not it, keep guessing!";
+    clearErrorFeedback();
+    var wrong = findGuessErrors(userGuess, puzzle);
+    if (wrong.length > 0) {
+        feedback.innerText = "Answer doesn't match some clues!";
+        for (var i = 0; i < wrong.length; i++) {
+            guessDivs[wrong[i]].className += " error";
+        }
+    }
+    else {
+        feedback.innerText = "Answer matches all clues, but there's another word!";
+    }
 }
