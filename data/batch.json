@@ -44,9 +44,12 @@ START=1
 {"answer": "ratio", "mode":"count", "clues":["thing", "board", "moral", "cause", "vapor"]}
 {"answer": "about", "mode":"slot", "clues":["these", "table", "humor"]}
 {"answer": "boot", "mode":"count", "clues":["wise", "bulb", "crop", "salt", "till", "down"]}
+{"answer": "chalk", "mode":"slot", "clues":["seven", "heavy", "wound", "paint", "wheel"]}
 {"answer": "locus", "mode":"count", "clues":["shear", "equal", "shore", "stiff", "royal", "cause"]}
 {"answer": "fold", "mode":"count", "clues":["park", "wild", "will", "four"]}
+{"answer": "beer", "mode":"slot", "clues":["near", "debt"]}
 {"answer": "sorry", "mode":"count", "clues":["tired", "enemy", "paint", "sharp"]}
+{"answer": "short", "mode":"slot", "clues":["cover", "break", "world", "liter", "which", "flask"]}
 {"answer": "call", "mode":"count", "clues":["rice", "bite", "good", "well", "host", "dear"]}
 {"answer": "crush", "mode":"slot", "clues":["knock", "cloth", "today", "chalk", "brave"]}
 {"answer": "since", "mode":"count", "clues":["clock", "store", "music", "among", "quiet", "break"]}
@@ -59,6 +62,7 @@ START=1
 {"answer": "month", "mode":"slot", "clues":["judge", "these", "honey"]}
 {"answer": "star", "mode":"count", "clues":["bale", "gill", "lime", "cent", "test", "area"]}
 {"answer": "chair", "mode":"count", "clues":["locus", "their", "fired", "shade"]}
+{"answer": "sent", "mode":"count", "clues":["slow", "load", "oven", "oval", "wash", "true"]}
 
 
 

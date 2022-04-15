@@ -26,28 +26,65 @@
         <a id="next-button" href="#" class="large-button">&gt;</a>
         <a href="/info.html" class="large-button">How to Play</a>
     </div>
-<div class="container bg-dark">
 
-    <div class="title-bar flex"><img src="/img/cow_icon.png"/>
-        <div class="flow" >
-            <h1>Moojestic </h1>
-            <p id="error"></p>
+
+
+    <div class="container bg-dark">
+        <div class="title-bar flex"><img src="/img/cow_icon.png"/>
+            <div class="flow" >
+                <h1>Moojestic </h1>
+                <p id="error"></p>
+            </div>
         </div>
-    </div>
-    <div class="margin-in">
-        <div id="puzzle" class="grid"></div>
+        <div class="margin-in">
+            <div id="puzzle" class="grid"></div>
+        </div>
+
+        <div id="answer-area" class="hidden">
+            <div class="flex margin-top">
+                <input type="text" autocomplete="off" placeholder="Answer" id="answer-input" oninput="onAnswerTextChanged(this);"/>
+                <button id="clear-button" class="large-button text-light bg-dark-button" onclick="clearAnswer();"> Clear </button>
+            </div>
+            <div>
+                <p id="feedback"></p>
+            </div>
+        </div>
+    <div>
+
+
+    <div id="available-area" class="flex">
+        <div  class="grid">
+            <span id="av-a"> a </span>
+            <span id="av-b"> b </span>
+            <span id="av-c"> c </span>
+            <span id="av-d"> d </span>
+            <span id="av-e"> e </span>
+            <span id="av-f"> f </span>
+            <span id="av-g"> g </span>
+            <span id="av-h"> h </span>
+            <span id="av-i"> i </span>
+            <span id="av-j"> j </span>
+            <span id="av-k"> k </span>
+            <span id="av-l"> l </span>
+            <span id="av-m"> m </span>
+        </div>
+        <div  class="grid">
+            <span id="av-n"> n </span>
+            <span id="av-o"> o </span>
+            <span id="av-p"> p </span>
+            <span id="av-q"> q </span>
+            <span id="av-r"> r </span>
+            <span id="av-s"> s </span>
+            <span id="av-t"> t </span>
+            <span id="av-u"> u </span>
+            <span id="av-v"> v </span>
+            <span id="av-w"> w </span>
+            <span id="av-x"> x </span>
+            <span id="av-y"> y </span>
+            <span id="av-z"> z </span>
+        </div>
     </div>
 
-    <div id="answer-area" class="hidden">
-        <div class="flex margin-top">
-            <input type="text" autocomplete="off" placeholder="Answer" id="answer-input" oninput="onAnswerTextChanged(this);"/>
-            <button id="clear-button" class="large-button text-light bg-dark-button" onclick="clearAnswer();"> Clear </button>
-        </div>
-        <div>
-            <p id="feedback"></p>
-        </div>
-    </div>
-</div>
 
 
 <script type="text/javascript">

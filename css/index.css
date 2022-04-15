@@ -8,6 +8,11 @@
     --clr-correct: 30, 180, 40;
     --clr-shuffled: 200, 100, 200; 
 
+    --clr-available-yes: 150, 80, 20; 
+    --clr-available-yes-bg: 255, 230, 160; 
+    --clr-available-no: 150, 150, 150;
+    --clr-available-no-bg: 150, 150, 150;
+
      /* font-sizes */
     --fs-900: 9.375rem;
     --fs-800: 6.25rem;
@@ -414,6 +419,8 @@ h2 {
     margin: 1rem;
 }
 
+
+
 .title-bar {
     /*outline: 1px solid yellow;*/
 }
@@ -466,3 +473,32 @@ h2 {
     /*border-bottom: .2rem solid rgb(var(--clr-light));*/
     text-decoration: underline;
 }    
+
+
+#available-area {
+    right:  20px;
+    top: 20px;
+    position: fixed;
+    visibility: hidden;
+}
+
+.available-yes,
+.available-no {
+    border-radius: 0.35em;
+    border: solid red 3px;
+    padding: 0.1em;
+    aspect-ratio: 2;
+    text-transform: uppercase;
+}
+
+.available-yes {
+    border-color: rgb(var(--clr-title));
+    background-color: rgb(var(--clr-title));
+    color:  rgb(var(--clr-title));
+}
+
+.available-no {
+    border-color: rgb(var(--clr-available-no));
+    background-color: rgb(var(--clr-available-no-bg));
+    color: rgb(var(--clr-available-no));
+}
