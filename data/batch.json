@@ -63,6 +63,17 @@ START=1
 {"answer": "star", "mode":"count", "clues":["bale", "gill", "lime", "cent", "test", "area"]}
 {"answer": "chair", "mode":"count", "clues":["locus", "their", "fired", "shade"]}
 {"answer": "sent", "mode":"count", "clues":["slow", "load", "oven", "oval", "wash", "true"]}
+{"answer": "wing", "mode":"slot", "clues":["wash", "gone"], "level":1}
+{"answer": "meter", "mode":"slot", "clues":["steam", "grass", "sleep", "first"], "level":2}
+{"answer": "take", "mode":"count", "clues":["area", "wide", "left", "took", "five", "lava"], "level":3}
+{"answer": "break", "mode":"slot", "clues":["swing", "clock", "blame"], "level":1}
+{"answer": "shirt", "mode":"count", "clues":["paper", "noted", "organ", "swing", "other"], "level":4}
+{"answer": "said", "mode":"slot", "clues":["undo", "mean", "cart", "came", "wash", "mess"], "level":1}
+{"answer": "table", "mode":"slot", "clues":["china", "cloth", "vapor", "cloud", "smell"], "level":2}
+{"answer": "spot", "mode":"count", "clues":["busy", "root", "blue", "test", "upon"], "level":3}
+{"answer": "least", "mode":"slot", "clues":["steam", "heavy", "juice", "these", "zebra", "gland"], "level":1}
+{"answer": "guard", "mode":"count", "clues":["spoon", "locus", "apple", "stair", "gross", "under"], "level":4}
+
 
 
 
