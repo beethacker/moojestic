@@ -76,16 +76,19 @@ START=1
 {"answer": "thing", "mode":"count", "clues":["short", "chain", "ditch", "black", "dance", "debit"], "level":3}
 {"answer": "their", "mode":"slot", "clues":["shave", "judge", "debit", "ditch", "every"], "level":1}
 {"answer": "nice", "mode":"count", "clues":["mind", "king", "dive", "much", "late"], "level":2}
+{"answer": "shirt", "mode":"count", "clues":["paper", "noted", "organ", "swing", "other"], "level":4}
 {"answer": "limit", "mode":"slot", "clues":["which", "ankle", "meter"], "level":1}
 {"answer": "linen", "mode":"count", "clues":["grand", "funny", "piano", "story", "focus", "ankle"], "level":3}
 {"answer": "frost", "mode":"slot", "clues":["flood", "while", "thick", "hinge"], "level":1}
 {"answer": "right", "mode":"slot", "clues":["image", "fever", "plate", "front"], "level":2}
+{"answer": "guard", "mode":"count", "clues":["spoon", "locus", "apple", "stair", "gross", "under"], "level":4}
 {"answer": "dive", "mode":"count", "clues":["give", "wind"], "level":1}
 {"answer": "were", "mode":"slot", "clues":["cusp", "four", "coil", "town", "wall", "rant"], "level":3}
 {"answer": "meal", "mode":"count", "clues":["will", "warm", "rich", "play", "dive"], "level":2}
 {"answer": "meow", "mode":"slot", "clues":["hath", "fear", "deep", "sort", "wide"], "level":1}
 
 
+{"answer": "shirt", "mode":"count", "clues":["trick", "sleep", "might", "crime"], "level":5}
 
 
 
