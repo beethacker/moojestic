@@ -86,9 +86,23 @@ START=1
 {"answer": "were", "mode":"slot", "clues":["cusp", "four", "coil", "town", "wall", "rant"], "level":3}
 {"answer": "meal", "mode":"count", "clues":["will", "warm", "rich", "play", "dive"], "level":2}
 {"answer": "meow", "mode":"slot", "clues":["hath", "fear", "deep", "sort", "wide"], "level":1}
-
-
 {"answer": "shirt", "mode":"count", "clues":["trick", "sleep", "might", "crime"], "level":5}
+{"answer": "linen", "mode":"slot", "clues":["enemy", "april", "power", "shelf", "inner"], "level":1}
+{"answer": "among", "mode":"count", "clues":["stain", "large", "actor", "fiber", "chair", "thing"] }
+{"answer": "does", "mode":"count", "clues":["card", "cusp", "then", "love", "tide"] }
+{"answer": "monkey", "mode":"slot", "clues":["sucker", "handle", "public"], "level":3}
+{"answer": "knee", "mode":"count", "clues":["drop", "deep", "wing", "away", "upon", "mark"] }
+{"answer": "more", "mode":"count", "clues":["like", "soap", "mean", "soil", "with", "tear"], "level":3 }
+{"answer": "force", "mode":"slot", "clues":["start", "shake", "paper", "steel", "cough"], "level":2}
+{"answer": "false", "mode":"count", "clues":["chain", "slate", "fruit", "steam", "grain"], "level":4 }
+{"answer": "flow", "mode":"slot", "clues":["pure", "ball", "high", "bent", "wife"], "level":1}
+{"answer": "deep", "mode":"count", "clues":["cook", "spit", "such", "need", "cold"] }
+{"answer": "circus", "mode":"slot", "clues":["stitch", "please", "record", "normal"], "level":4}
+{"answer": "wine", "mode":"count", "clues":["fair", "away", "both", "debt", "dike", "iron"], "level":3 }
+{"answer": "class", "mode":"slot", "clues":["quick", "fruit", "china", "paint", "drink", "least"], "level":1}
+{"answer": "bone", "mode":"count", "clues":["note", "made", "tide", "jury", "wood", "bill"], "level":2 }
+
+
 
 
 
