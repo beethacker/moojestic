@@ -93,22 +93,19 @@ START=1
 {"answer": "monkey", "mode":"slot", "clues":["sucker", "handle", "public"], "level":3}
 {"answer": "knee", "mode":"count", "clues":["drop", "deep", "wing", "away", "upon", "mark"] }
 {"answer": "more", "mode":"count", "clues":["like", "soap", "mean", "soil", "with", "tear"], "level":3 }
+{"answer": "wizard", "mode":"count", "clues":["bongos", "dragon", "sewers", "buzzer", "desert", "wraith"], "level":3}
 {"answer": "force", "mode":"slot", "clues":["start", "shake", "paper", "steel", "cough"], "level":2}
 {"answer": "false", "mode":"count", "clues":["chain", "slate", "fruit", "steam", "grain"], "level":4 }
+{"answer": "chips", "mode":"count", "clues":["thing", "gnome", "noted", "cheap", "piano", "pence"], "level":3}
 {"answer": "flow", "mode":"slot", "clues":["pure", "ball", "high", "bent", "wife"], "level":1}
 {"answer": "deep", "mode":"count", "clues":["cook", "spit", "such", "need", "cold"] }
 {"answer": "circus", "mode":"slot", "clues":["stitch", "please", "record", "normal"], "level":4}
+{"answer": "hive", "mode":"count", "clues":["lava", "hate", "kiln", "milk"], "level":2}
 {"answer": "wine", "mode":"count", "clues":["fair", "away", "both", "debt", "dike", "iron"], "level":3 }
 {"answer": "class", "mode":"slot", "clues":["quick", "fruit", "china", "paint", "drink", "least"], "level":1}
 {"answer": "bone", "mode":"count", "clues":["note", "made", "tide", "jury", "wood", "bill"], "level":2 }
-
-
-
-
-
-
-
-
-
+{"answer": "dirty", "mode":"slot", "clues":["trade", "month", "price", "fresh"], "level":1}
+{"answer": "repair", "mode":"slot", "clues":["client", "dancer", "polish", "joiner", "vessel"], "level":2}
+{"answer": "stair", "mode":"count", "clues":["heart", "scale", "index", "fever"], "level":4}
 
 
