@@ -107,5 +107,10 @@ START=1
 {"answer": "dirty", "mode":"slot", "clues":["trade", "month", "price", "fresh"], "level":1}
 {"answer": "repair", "mode":"slot", "clues":["client", "dancer", "polish", "joiner", "vessel"], "level":2}
 {"answer": "stair", "mode":"count", "clues":["heart", "scale", "index", "fever"], "level":4}
+{"answer": "quiet", "mode": "slot", "clues":["vodka", "since", "hinge", "moral", "towel"], "level": 2}
+{"answer": "cold", "mode":"count", "clues":["sill", "xray", "step", "acid", "bath", "hope"], "level":2}
+{"answer": "music", "mode": "slot", "clues":["nerve", "brick", "toast", "stiff", "paint"], "level": 3}
+{"answer": "hold", "mode":"count", "clues":["cost", "pipe", "once", "hunt", "list", "used"], "level":2}
+
 
 
