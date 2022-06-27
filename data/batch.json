@@ -111,6 +111,10 @@ START=1
 {"answer": "cold", "mode":"count", "clues":["sill", "xray", "step", "acid", "bath", "hope"], "level":2}
 {"answer": "music", "mode": "slot", "clues":["nerve", "brick", "toast", "stiff", "paint"], "level": 3}
 {"answer": "hold", "mode":"count", "clues":["cost", "pipe", "once", "hunt", "list", "used"], "level":2}
+{"answer": "judge", "mode": "slot", "clues":["fixed", "outer", "jelly"], "level": 1}
+{"answer": "rock", "mode":"count", "clues":["bent", "wave", "once", "lead", "kiss", "fair"], "level":2}
+{"answer": "flint", "mode":"count", "clues":["event", "ankle", "opium", "china", "slate", "fifth"], "level":4}
+
 
 
 
