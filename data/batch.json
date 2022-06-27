@@ -114,6 +114,13 @@ START=1
 {"answer": "judge", "mode": "slot", "clues":["fixed", "outer", "jelly"], "level": 1}
 {"answer": "rock", "mode":"count", "clues":["bent", "wave", "once", "lead", "kiss", "fair"], "level":2}
 {"answer": "flint", "mode":"count", "clues":["event", "ankle", "opium", "china", "slate", "fifth"], "level":4}
+{"answer": "dirty", "mode": "slot", "clues":["brush", "pence", "fifth", "touch", "maybe"], "level": 1}
+{"answer": "kiss", "mode": "count", "clues":["once", "test", "that", "book"], "level": 2}
+{"answer": "ankle", "mode": "slot", "clues":["earth", "smile", "plane", "skull"], "level": 1}
+{"answer": "there", "mode":"count", "clues":["price", "would", "field", "thief", "drink"], "level":4}
+{"answer": "earth", "mode": "slot", "clues":["tired", "basin", "wrist", "along", "guide"], "level": 3}
+{"answer": "till", "mode": "count", "clues":["wide", "pure", "hurt", "last", "cafe", "well"], "level": 3}
+
 
 
 
