@@ -120,7 +120,10 @@ START=1
 {"answer": "there", "mode":"count", "clues":["price", "would", "field", "thief", "drink"], "level":4}
 {"answer": "earth", "mode": "slot", "clues":["tired", "basin", "wrist", "along", "guide"], "level": 3}
 {"answer": "till", "mode": "count", "clues":["wide", "pure", "hurt", "last", "cafe", "well"], "level": 3}
-
+{"answer": "boot", "mode": "count", "clues":["skin", "bite", "left", "sock", "blow"], "level": 3}
+{"answer": "yours", "mode": "slot", "clues":["nasty", "twist", "cruel"], "level": 2}
+{"answer": "fight", "mode": "count", "clues":["shale", "whose", "tight", "humor", "fiber"], "level": 2}
+{"answer": "outlaw", "mode": "slot", "clues":["basket", "design", "waiter", "lawyer", "victim", "burial"], "level": 3}
 
 
 
