@@ -124,7 +124,17 @@ START=1
 {"answer": "yours", "mode": "slot", "clues":["nasty", "twist", "cruel"], "level": 2}
 {"answer": "fight", "mode": "count", "clues":["shale", "whose", "tight", "humor", "fiber"], "level": 2}
 {"answer": "outlaw", "mode": "slot", "clues":["basket", "design", "waiter", "lawyer", "victim", "burial"], "level": 3}
-
-
+{"answer": "beak", "mode": "count", "clues":["part", "look", "purr", "clay", "some", "wife"], "level": 5}
+{"answer": "oven", "mode": "slot", "clues":["tall", "kind", "five", "grip", "upon"], "level": 1}
+{"answer": "germ", "mode": "count", "clues":["soup", "fork", "will", "bomb", "bank", "plug"], "level": 2}
+{"answer": "knock", "mode": "count", "clues":["thumb", "study", "cloud", "table", "trick"], "level": 4}
+{"answer": "card", "mode": "slot", "clues":["debt", "hurt", "duct", "deep", "loss"], "level": 1}
+{"answer": "front", "mode": "count", "clues":["madam", "hurry", "daily", "locus", "light", "among"], "level": 3}
+{"answer": "spark", "mode": "count", "clues":["chair", "shirt", "black", "lunch", "wrist"], "level": 2}
+{"answer": "minute", "mode": "count", "clues":["eleven", "saucer", "became", "carpet", "amount"], "level": 1}
+{"answer": "eleven", "mode": "count", "clues":["thorax", "writer", "clever", "overdo", "become"], "level": 4}
+{"answer": "spring", "mode": "slot", "clues":["simple", "seaman", "minute", "cooker"], "level": 2}
+{"answer": "hedge", "mode": "count", "clues":["green", "ratio", "magic", "valve", "flame", "death"], "level": 3}
+{"answer": "rant", "mode": "count", "clues":["host", "swim", "last", "seen", "cent", "star"], "level": 2}
 
 
