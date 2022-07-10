@@ -136,5 +136,12 @@ START=1
 {"answer": "spring", "mode": "slot", "clues":["simple", "seaman", "minute", "cooker"], "level": 2}
 {"answer": "hedge", "mode": "count", "clues":["green", "ratio", "magic", "valve", "flame", "death"], "level": 3}
 {"answer": "rant", "mode": "count", "clues":["host", "swim", "last", "seen", "cent", "star"], "level": 2}
-
+{"answer": "leaf", "mode": "count", "clues":["cost", "meal", "tear", "seed", "form"], "level": 1}
+{"answer": "wise", "mode": "count", "clues":["jerk", "west", "join"], "level": 2}
+{"answer": "shelf", "mode": "slot", "clues":["force", "hotel"], "level": 1}
+{"answer": "angle", "mode": "slot", "clues":["clock", "meter", "noted", "touch", "royal", "ratio"], "level": 3}
+{"answer": "plain", "mode": "count", "clues":["ankle", "bread", "green", "month", "paint", "daily"], "level": 3}
+{"answer": "heart", "mode": "slot", "clues":["berry", "nasty", "daily", "march"], "level": 1}
+{"answer": "narrow", "mode": "slot", "clues":["wasted", "amount", "radium", "figure", "remedy", "nickle"], "level": 1}
+{"answer": "cotton", "mode": "count", "clues":["throat", "bottom", "trader", "patent", "canvas"], "level": 2}
 
