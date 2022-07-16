@@ -144,4 +144,12 @@ START=1
 {"answer": "heart", "mode": "slot", "clues":["berry", "nasty", "daily", "march"], "level": 1}
 {"answer": "narrow", "mode": "slot", "clues":["wasted", "amount", "radium", "figure", "remedy", "nickle"], "level": 1}
 {"answer": "cotton", "mode": "count", "clues":["throat", "bottom", "trader", "patent", "canvas"], "level": 2}
+{"answer": "canvas", "mode": "count", "clues":["import", "choice", "spirit", "porter", "honest", "silver"], "level": 5}
+{"answer": "play", "mode": "count", "clues":["root", "also", "poor", "rock", "duty"], "level": 2}
+{"answer": "used", "mode": "count", "clues":["edge", "bill", "seen", "kiss"], "level": 3}
+{"answer": "museum", "mode": "slot", "clues":["marked", "groove", "broken", "middle", "steady", "patent"], "level": 5}
+{"answer": "base", "mode": "count", "clues":["give", "beak", "tube", "hold", "sort"], "level": 2}
+{"answer": "forty", "mode": "count", "clues":["death", "exact", "rough", "shade", "quick", "grief"], "level": 3}
+{"answer": "moon", "mode": "count", "clues":["melt", "oven", "does", "took"], "level": 3}
+{"answer": "water", "mode": "count", "clues":["chest", "straw", "jewel", "sugar"], "level": 3}
 
