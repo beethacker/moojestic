@@ -152,4 +152,23 @@ START=1
 {"answer": "forty", "mode": "count", "clues":["death", "exact", "rough", "shade", "quick", "grief"], "level": 3}
 {"answer": "moon", "mode": "count", "clues":["melt", "oven", "does", "took"], "level": 3}
 {"answer": "water", "mode": "count", "clues":["chest", "straw", "jewel", "sugar"], "level": 3}
-
+{"answer": "vapor", "mode": "slot", "clues":["sheet", "tooth", "thing", "basin", "hinge", "proud"], "level": 2}
+{"answer": "swing", "mode": "slot", "clues":["error", "knife", "waste"], "level": 1}
+{"answer": "ugly", "mode": "count", "clues":["work", "jury", "load", "yawn", "body", "side"], "level": 2}
+{"answer": "shadow", "mode": "slot", "clues":["prison", "tunnel", "finger", "liquid", "father"], "level": 3}
+{"answer": "pound", "mode": "count", "clues":["noted", "paste", "thief"], "level": 3}
+{"answer": "host", "mode": "count", "clues":["pull", "hope", "mark", "past"], "level": 1}
+{"answer": "along", "mode": "slot", "clues":["agent", "brick", "horse", "pedal"], "level": 1}
+{"answer": "ratio", "mode": "slot", "clues":["paper", "zebra", "shock", "where", "asset", "knife"], "level": 1}
+{"answer": "only", "mode": "count", "clues":["sail", "help", "pair", "bent", "hope"], "level": 2}
+{"answer": "clever", "mode": "slot", "clues":["middle", "search", "strain", "keeper"], "level": 2}
+{"answer": "profit", "mode": "slot", "clues":["smooth", "splash", "vortex", "uproot", "fusion"], "level": 1}
+{"answer": "chief", "mode": "count", "clues":["horse", "touch", "offer", "magic", "among"], "level": 3}
+{"answer": "bucket", "mode": "slot", "clues":["degree", "charge", "prayer", "gravel", "button"], "level": 1}
+{"answer": "loose", "mode": "count", "clues":["madam", "prose", "scale", "fever", "input", "sepal"], "level": 3}
+{"answer": "police", "mode": "slot", "clues":["heater", "supply", "change"], "level": 1}
+{"answer": "opium", "mode": "slot", "clues":["white", "funny", "offer", "daily"], "level": 3}
+{"answer": "mist", "mode": "count", "clues":["mill", "last", "lake"], "level": 1}
+{"answer": "root", "mode": "count", "clues":["soft", "took", "said", "that", "iron"], "level": 2}
+{"answer": "shelf", "mode": "count", "clues":["sight", "thumb", "sound", "zebra", "flesh"], "level": 2}
+{"answer": "range", "mode": "count", "clues":["while", "shear", "laugh", "ditch", "about", "clean"], "level": 4}
