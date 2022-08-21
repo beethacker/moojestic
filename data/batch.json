@@ -172,3 +172,15 @@ START=1
 {"answer": "root", "mode": "count", "clues":["soft", "took", "said", "that", "iron"], "level": 2}
 {"answer": "shelf", "mode": "count", "clues":["sight", "thumb", "sound", "zebra", "flesh"], "level": 2}
 {"answer": "range", "mode": "count", "clues":["while", "shear", "laugh", "ditch", "about", "clean"], "level": 4}
+{"answer": "group", "mode": "slot", "clues":["ratio", "night", "juice", "chief", "moral"], "level": 1}
+{"answer": "lock", "mode": "count", "clues":["cart", "cave", "only", "male", "bark", "copy"], "level": 4}
+{"answer": "madam", "mode": "slot", "clues":["peace", "among", "ready", "screw", "trick", "cough"], "level": 2}
+{"answer": "swing", "mode": "count", "clues":["wreck", "truck", "sight", "dress", "south"], "level": 3}
+{"answer": "twice", "mode": "count", "clues":["watch", "place"], "level": 1}
+{"answer": "sleep", "mode": "count", "clues":["inner", "ruler", "brick", "piano", "stamp"], "level": 3}
+{"answer": "skull", "mode": "slot", "clues":["towel", "focus", "happy", "noted"], "level": 3}
+{"answer": "wish", "mode": "count", "clues":["face", "wise", "hoof"], "level": 1}
+{"answer": "column", "mode": "slot", "clues":["canvas", "twelve", "motion"], "level": 2}
+{"answer": "clay", "mode": "count", "clues":["mass", "hard", "lock", "cake", "army"], "level": 4}
+{"answer": "system", "mode": "count", "clues":["nation", "change", "father", "theory", "memory"], "level": 3}
+
