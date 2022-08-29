@@ -183,4 +183,14 @@ START=1
 {"answer": "column", "mode": "slot", "clues":["canvas", "twelve", "motion"], "level": 2}
 {"answer": "clay", "mode": "count", "clues":["mass", "hard", "lock", "cake", "army"], "level": 4}
 {"answer": "system", "mode": "count", "clues":["nation", "change", "father", "theory", "memory"], "level": 3}
+{"answer": "call", "mode": "count", "clues":["lace", "flow", "ball", "gill"], "level": 1}
+{"answer": "neck", "mode": "count", "clues":["knee", "wire", "warm", "cool"], "level": 2}
+{"answer": "mind", "mode": "count", "clues":["stem", "knot", "dive", "rate", "root", "fold"], "level": 3}
+{"answer": "throat", "mode": "slot", "clues":["demand", "import", "handle"], "level": 2}
+{"answer": "layer", "mode": "count", "clues":["quick", "hyena", "gross", "seven", "while", "fever"], "level": 3}
+{"answer": "blame", "mode": "slot", "clues":["false", "prick", "petal", "opium", "salad", "olive"], "level": 2}
+{"answer": "serum", "mode": "count", "clues":["plate", "liter", "sorry", "grief", "store"], "level": 5}
+
+
+
 
