@@ -190,7 +190,15 @@ START=1
 {"answer": "layer", "mode": "count", "clues":["quick", "hyena", "gross", "seven", "while", "fever"], "level": 3}
 {"answer": "blame", "mode": "slot", "clues":["false", "prick", "petal", "opium", "salad", "olive"], "level": 2}
 {"answer": "serum", "mode": "count", "clues":["plate", "liter", "sorry", "grief", "store"], "level": 5}
-
-
-
-
+{"answer": "view", "mode": "slot", "clues":["food", "poor", "hurt", "mile", "west"], "level": 2}
+{"answer": "thief", "mode": "slot", "clues":["knife", "tongs"], "level": 1}
+{"answer": "sneeze", "mode": "slot", "clues":["active", "island", "trader", "museum"], "level":3}
+{"answer": "list", "mode": "count", "clues":["mast", "mark", "fowl", "line"], "level": 1}
+{"answer": "night", "mode": "count", "clues":["store", "today", "joint", "index", "color", "organ"], "level": 6}
+{"answer": "went", "mode": "count", "clues":["west", "over", "pipe", "baby", "song"], "level": 1}
+{"answer": "play", "mode": "count", "clues":["ugly", "jump", "oval", "food", "fume"], "level": 3}
+{"answer": "paint", "mode": "count", "clues":["plant", "judge", "outer", "month"], "level": 2}
+{"answer": "deck", "mode": "count", "clues":["lock", "nail", "bang", "head"], "level": 1}
+{"answer": "right", "mode": "count", "clues":["price", "china", "sheet", "grass", "chain", "limit"], "level": 6}
+{"answer": "scrap", "mode": "count", "clues":["story", "wheel", "screw", "apple"], "level": 2}
+{"answer": "house", "mode": "count", "clues":["today", "offer", "moral", "shade", "every", "opium"], "level": 3}
