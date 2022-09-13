@@ -477,28 +477,46 @@ h2 {
 
 #available-area {
     right:  20px;
-    top: 20px;
-    position: fixed;
-    visibility: hidden;
+    margin-top: 30px;
+    /*position: fixed;*/
 }
 
 .available-yes,
 .available-no {
     border-radius: 0.35em;
     border: solid red 3px;
-    padding: 0.1em;
+    padding: 0.15em;
     aspect-ratio: 2;
+    margin: 0.1em;
     text-transform: uppercase;
+
+    vertical-align: middle;
+    text-align: center;
 }
 
 .available-yes {
-    border-color: rgb(var(--clr-title));
-    background-color: rgb(var(--clr-title));
-    color:  rgb(var(--clr-title));
+    border-color: rgb(var(--clr-available-yes));
+    background-color: rgb(var(--clr-available-yes-bg));
+    color:  rgb(var(--clr-available-yes));
 }
 
 .available-no {
     border-color: rgb(var(--clr-available-no));
     background-color: rgb(var(--clr-available-no-bg));
     color: rgb(var(--clr-available-no));
+}
+
+.available-area-on {
+}
+
+.available-area-off {
+    visibility: hidden;
+}
+
+/**  Difficulty  */
+.star {
+    color:  rgb(var(--clr-title));
+    font-size: var(--fs-700);
+    /*content:  &#9733;*/
+    content: "*";
 }

@@ -121,6 +121,21 @@ function createGuessDiv(answer, word, insetSlots) {
     return div;
 }
 
+function createDifficultyDiv(difficulty) {
+    var div = document.createElement("div");
+    if (difficulty) {
+        for (var i = 0; i < 5; i++) {
+            if (i < difficulty) {
+                div.insertAdjacentHTML('beforeend', '<span class="star">&#9733;</span>');
+            }
+            else {
+                div.insertAdjacentHTML('beforeend', '<span class="star">&#9734;</span>');
+            }
+        }
+    }
+    return div;
+}
+
 function setPuzzle(n, json) {
     document.getElementById("date").innerText = "Puzzle #" + n;
     var div = document.getElementById("puzzle");
@@ -141,6 +156,47 @@ function setPuzzle(n, json) {
     
     correctAnswer = answer;
     loadedPuzzle = json;
+
+    // Determine letters that are still available!  (Only for SLOT mode I think?)
+    if (json["mode"] == "slot") {
+        document.getElementById("available-area").className = "available-area-on";
+        var start = 'a'.charCodeAt(0);
+        for (var i = 0; i < 26; i++) {
+            var char = String.fromCharCode(start + i);
+            document.getElementById("av-" + char).className="available-yes";
+        }
+        var excludeLetters = getExcludedLetters(json);
+        for (var i = 0; i < excludeLetters.length; i++) {
+            var ex = excludeLetters[i];
+            var cell = document.getElementById("av-" + ex);
+            cell.className = "available-no";
+        }
+    }
+    else {
+        document.getElementById("available-area").className = "available-area-off";
+    }
+
+    // Show difficulty
+    div = document.getElementById("difficulty");
+    div.append(createDifficultyDiv(json["level"]));
+}
+
+
+function getExcludedLetters(json) {
+    var result = [];
+    var answer = json["answer"];
+    for (var i = 0; i < json["clues"].length; i++) {
+        var clue = json["clues"][i];
+        var slots = computeSlots(answer, clue);
+        console.log("Slots = " + JSON.stringify(slots));
+        for (var j = 0; j < slots.length; j++) {
+            if (slots[j] == 0) {
+                result.push(clue[j]);
+            }
+        }
+    }
+
+    return result;
 }
 
 
