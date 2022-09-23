@@ -202,3 +202,11 @@ START=1
 {"answer": "right", "mode": "count", "clues":["price", "china", "sheet", "grass", "chain", "limit"], "level": 6}
 {"answer": "scrap", "mode": "count", "clues":["story", "wheel", "screw", "apple"], "level": 2}
 {"answer": "house", "mode": "count", "clues":["today", "offer", "moral", "shade", "every", "opium"], "level": 3}
+{"answer": "friend", "mode": "slot", "clues":["output", "eleven", "empire", "sticky"], "level": 4}
+{"answer": "twin", "mode": "slot", "clues":["even", "need", "hour", "view", "sail"], "level": 2}
+{"answer": "tired", "mode": "count", "clues":["vodka", "input", "cruel", "flask", "wrong", "under"], "level": 4}
+{"answer": "hard", "mode": "count", "clues":["rich", "note", "germ", "said", "path"], "level": 3}
+{"answer": "xray", "mode": "slot", "clues":["hold", "more", "deep", "leaf", "next", "cost"], "level": 2}
+{"answer": "human", "mode": "count", "clues":["march", "young", "proof", "drain"], "level": 3}
+{"answer": "fruit", "mode": "slot", "clues":["wheel", "radio", "flash"], "level": 2}
+{"answer": "column", "mode": "count", "clues":["sponge", "volume", "common"], "level": 3}
