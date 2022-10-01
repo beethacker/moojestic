@@ -210,3 +210,14 @@ START=1
 {"answer": "human", "mode": "count", "clues":["march", "young", "proof", "drain"], "level": 3}
 {"answer": "fruit", "mode": "slot", "clues":["wheel", "radio", "flash"], "level": 2}
 {"answer": "column", "mode": "count", "clues":["sponge", "volume", "common"], "level": 3}
+{"answer": "plain", "mode": "slot", "clues":["april", "cloud", "magic", "locus", "ratio"], "level": 1}
+{"answer": "crop", "mode": "count", "clues":["cent", "doll", "pair", "wise", "turn"], "level": 4}
+{"answer": "limit", "mode": "count", "clues":["agent", "hedge", "snake", "court", "locus"], "level": 2}
+{"answer": "breath", "mode": "slot", "clues":["outlaw", "advice", "behind"], "level": 3} 
+{"answer": "plan", "mode": "count", "clues":["chin", "ball", "left", "need", "pipe"], "level": 3}
+{"answer": "olive", "mode": "slot", "clues":["waste", "grief", "humor", "blame"], "level": 1}
+{"answer": "wasted", "mode": "count", "clues":["ticket", "broker", "effort", "piston", "drawer"], "level": 4}
+{"answer": "kind", "mode": "count", "clues":["east", "knot", "body", "acid", "nine"], "level": 3}
+
+
+
