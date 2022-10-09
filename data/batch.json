@@ -218,6 +218,15 @@ START=1
 {"answer": "olive", "mode": "slot", "clues":["waste", "grief", "humor", "blame"], "level": 1}
 {"answer": "wasted", "mode": "count", "clues":["ticket", "broker", "effort", "piston", "drawer"], "level": 4}
 {"answer": "kind", "mode": "count", "clues":["east", "knot", "body", "acid", "nine"], "level": 3}
+{"answer": "mother", "mode": "count", "clues":["demand", "piston", "tongue", "honest", "sunday"], "level": 2}
+{"answer": "madam", "mode": "count", "clues":["smell", "might", "right", "queen", "bread"], "level": 3}
+{"answer": "tame", "mode": "count", "clues":["seem", "rise", "this", "hope", "beer", "bank"], "level": 2}
+{"answer": "eight", "mode": "count", "clues":["doubt", "ruler", "world", "cover", "awake", "tight"], "level": 1}
+{"answer": "plough", "mode": "slot", "clues":["tunnel", "search"], "level": 3}
+{"answer": "mother", "mode": "count", "clues":["demand", "piston", "tongue", "honest", "sunday"], "level": 2}
+{"answer": "tune", "mode": "count", "clues":["neck", "took", "chin", "came", "made", "soup"], "level": 3}
+{"answer": "colony", "mode": "slot", "clues":["cavity", "amount"], "level": 2}
+{"answer": "flag", "mode": "count", "clues":["kind", "gave", "face", "germ", "pool"], "level": 4}
 
 
 
