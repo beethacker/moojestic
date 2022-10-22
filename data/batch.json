@@ -227,6 +227,13 @@ START=1
 {"answer": "tune", "mode": "count", "clues":["neck", "took", "chin", "came", "made", "soup"], "level": 3}
 {"answer": "colony", "mode": "slot", "clues":["cavity", "amount"], "level": 2}
 {"answer": "flag", "mode": "count", "clues":["kind", "gave", "face", "germ", "pool"], "level": 4}
-
+{"answer": "once", "mode": "slot", "clues":["open"], "level": 2}
+{"answer": "heart", "mode": "slot", "clues":["false", "study", "input", "drink", "shock", "stain"], "level": 1}
+{"answer": "plow", "mode": "count", "clues":["mill", "soup", "tray", "rail", "june", "well"], "level": 3}
+{"answer": "angle", "mode": "slot", "clues":["range", "olive"], "level": 1}
+{"answer": "taste", "mode": "count", "clues":["three", "limit", "noise", "after", "small", "hurry"], "level": 5}
+{"answer": "four", "mode": "count", "clues":["knee", "iron", "free", "door"], "level": 2}
+{"answer": "range", "mode": "count", "clues":["angry", "nasty", "jewel"], "level": 2}
+{"answer": "wedge", "mode": "count", "clues":["pound", "flood", "where", "store"], "level": 6}
 
 
