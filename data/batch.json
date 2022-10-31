@@ -235,5 +235,8 @@ START=1
 {"answer": "four", "mode": "count", "clues":["knee", "iron", "free", "door"], "level": 2}
 {"answer": "range", "mode": "count", "clues":["angry", "nasty", "jewel"], "level": 2}
 {"answer": "wedge", "mode": "count", "clues":["pound", "flood", "where", "store"], "level": 6}
-
-
+{"answer": "skull", "mode": "slot", "clues":["storm", "dress", "exact", "cough", "sepal"], "level": 1}
+{"answer": "strong", "mode": "slot", "clues":["square", "ballet", "flower", "bottle", "burner", "figure"], "level": 1}
+{"answer": "busy", "mode": "count", "clues":["mess", "past", "slow", "cafe", "copy", "spot"], "level": 3}
+{"answer": "sign", "mode": "count", "clues":["till", "busy", "very", "cool", "lens"], "level": 3}
+{"answer": "said", "mode": "count", "clues":["bird", "node", "rail", "lime", "lens", "line"], "level": 4}
