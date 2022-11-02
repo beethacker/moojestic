@@ -250,4 +250,9 @@ START=1
 {"answer": "cloud", "mode": "slot", "clues":["train", "slate", "actor", "shock", "outer"], "level": 1}
 {"answer": "self", "mode": "count", "clues":["food", "back", "rate", "lazy", "step", "soft"], "level": 3}
 {"answer": "needle", "mode": "slot", "clues":["locker", "degree", "import"], "level": 1}
-
+{"answer": "china", "mode": "count", "clues":["table", "heavy", "vodka", "round", "stone"], "level": 6}
+{"answer": "miner", "mode": "count", "clues":["shock", "drift", "money", "drink", "basin", "doubt"], "level": 3}
+{"answer": "cent", "mode": "slot", "clues":["meow", "nail", "shut", "swim", "face"], "level": 1}
+{"answer": "hedge", "mode": "count", "clues":["prose", "paint", "dress", "pence", "hyena"], "level": 4}
+{"answer": "based", "mode": "slot", "clues":["steam", "piano", "table", "space", "third"], "level": 1}
+{"answer": "left", "mode": "count", "clues":["cent", "fold", "able", "sock"], "level": 4}
