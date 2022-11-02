@@ -240,3 +240,14 @@ START=1
 {"answer": "busy", "mode": "count", "clues":["mess", "past", "slow", "cafe", "copy", "spot"], "level": 3}
 {"answer": "sign", "mode": "count", "clues":["till", "busy", "very", "cool", "lens"], "level": 3}
 {"answer": "said", "mode": "count", "clues":["bird", "node", "rail", "lime", "lens", "line"], "level": 4}
+{"answer": "blade", "mode": "count", "clues":["chair", "waste", "sight", "forty", "solid"], "level": 6}
+{"answer": "undo", "mode": "count", "clues":["wood", "cook", "such", "bark", "lung"], "level": 3}
+{"answer": "your", "mode": "count", "clues":["envy", "clay", "true", "ball", "chin", "rate"], "level": 2}
+{"answer": "young", "mode": "count", "clues":["wound", "quiet", "shore", "child", "voice"], "level": 3}
+{"answer": "twenty", "mode": "slot", "clues":["memory", "flower", "secret", "window"], "level": 3}
+{"answer": "queen", "mode": "count", "clues":["water", "spoon", "crime", "color", "prick", "quite"], "level": 3}
+{"answer": "those", "mode": "count", "clues":["money", "slide", "store", "equal", "shirt"], "level": 6}
+{"answer": "cloud", "mode": "slot", "clues":["train", "slate", "actor", "shock", "outer"], "level": 1}
+{"answer": "self", "mode": "count", "clues":["food", "back", "rate", "lazy", "step", "soft"], "level": 3}
+{"answer": "needle", "mode": "slot", "clues":["locker", "degree", "import"], "level": 1}
+
