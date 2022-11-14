@@ -256,3 +256,12 @@ START=1
 {"answer": "hedge", "mode": "count", "clues":["prose", "paint", "dress", "pence", "hyena"], "level": 4}
 {"answer": "based", "mode": "slot", "clues":["steam", "piano", "table", "space", "third"], "level": 1}
 {"answer": "left", "mode": "count", "clues":["cent", "fold", "able", "sock"], "level": 4}
+{"answer": "farmer", "mode": "slot", "clues":["office", "cheese", "before", "profit", "medium", "living"], "level": 2}
+{"answer": "gray", "mode": "count", "clues":["grey", "size"], "level": 1}
+{"answer": "town", "mode": "count", "clues":["sort", "burn", "male", "wire", "mind", "beef"], "level": 4}
+{"answer": "demand", "mode": "slot", "clues":["bottle", "murder", "spring"], "level": 1}
+{"answer": "bank", "mode": "count", "clues":["salt", "knee", "pool", "cent", "both"], "level": 2}
+{"answer": "profit", "mode": "slot", "clues":["patent", "empire", "become", "effect"], "level": 1}
+{"answer": "third", "mode": "count", "clues":["model", "wheel", "gland", "twice"], "level": 3}
+{"answer": "proud", "mode": "slot", "clues":["paint", "pupil", "heavy", "shale", "whose"], "level": 1}
+

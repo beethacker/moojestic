@@ -147,11 +147,13 @@
             </div>
             </div>
 
+   
+
+            <h3> Text Input </h3>
             <div class="flex" style="margin: 2rem">
                 <input type="text" placeholder="Check Answer" id="answer-input" oninput="test(this)"/>
                 <button class="large-button text-light bg-dark-button" onclick="clearTxt();"> Clear </button>
             </div>
-
             <script type="text/javascript">
                 var answerElement = document.getElementById("answer-input");
                 answerElement.setAttribute("maxlength", 4);
@@ -169,6 +171,24 @@
                     answerElement.value = "";
                 }
             </script>
+
+            <h3> New Text Input </h3>
+            <div>
+                <input type="text" class="answer-box" id="answer0" oninput="next_answer_box(this)"/>
+                <input type="text" class="answer-box" id="answer1" oninput="next_answer_box(this)"/>
+                <input type="text" class="answer-box" id="answer2" oninput="next_answer_box(this)"/>
+                <input type="text" class="answer-box" id="answer3" oninput="next_answer_box(this)"/>
+                <script type="text/javascript">
+                    var count = 4;
+                    function next_answer_box(field) {
+                        var fieldID = field.id;
+                        field.value = field.value.charAt(field.value.length-1);
+                        var num = Number(fieldID.charAt(fieldID.length-1));
+                        var next = ((num+1)%4);
+                        document.getElementById("answer" + next).focus();
+                    }
+                </script>
+            </div>
         </div>
     </section>
 
