@@ -1,5 +1,6 @@
 
 var guessDivs = {};
+var currentAnswer = "";
 
 const SlotType = {
     NONE: 0,
@@ -136,15 +137,19 @@ function createDifficultyDiv(difficulty) {
     return div;
 }
 
+
 function setPuzzle(n, json) {
+    var answer = json["answer"];
+    var guesses = json["clues"];
+    correctAnswer = answer;
+    loadedPuzzle = json;
+
     document.getElementById("date").innerText = "Puzzle #" + n;
     var div = document.getElementById("puzzle");
     var answerArea = document.getElementById("answer-area");
     answerArea.className = "";
 
     guessDivs = {};
-    var answer = json["answer"];
-    var guesses = json["clues"];
     for (var i = 0; i < guesses.length; i++) {
         if (json["mode"]=="slot") {
             div.append(createGuessDiv(answer, guesses[i], true));
@@ -153,10 +158,19 @@ function setPuzzle(n, json) {
             div.append(createGuessDiv(answer, guesses[i], false));
         }
     }
-    
-    correctAnswer = answer;
-    loadedPuzzle = json;
 
+    var answerDiv = document.getElementById("answer-tiles");
+    currentAnswer = Array(answer.length);
+    for (var i = 0; i < answer.length; i++) {
+        // answerDiv.insertAdjacentHTML("beforeEnd", "<input type='text' class='answer-box' id='answer"+i+"' oninput='onAnswerInput(this)'/>");
+        var answerTile = document.createElement("input");
+        answerTile.className = "answer-box";
+        answerTile.id = "answer" + i;
+        answerTile.setAttribute("oninput", "onAnswerInput(this)");
+        answerDiv.append(answerTile);
+    }
+
+    //-----------
     // Determine letters that are still available!  (Only for SLOT mode I think?)
     if (json["mode"] == "slot") {
         document.getElementById("available-area").className = "available-area-on";
@@ -199,6 +213,84 @@ function getExcludedLetters(json) {
     return result;
 }
 
+/* Answer checking! */
+function currentGuessAsString(guessArray) {
+    var result = ""
+    for (var i = 0; i < guessArray.length; i++) {
+       result += guessArray[i]; 
+    }
+    return result;
+}
+
+function allLettersFilled(guessArray) {
+    for (var i =  0; i < guessArray.length; i++) {
+        if (guessArray[i].length == 0 || guessArray[i] == " ") {
+            return false;
+        }
+    }
+    return true;
+}
+
+function onAnswerInput(field) {
+    var answerLength= correctAnswer.length;
+    var fieldID = field.id;
+    var num = Number(fieldID.charAt(fieldID.length-1));
+    if (field.value[0] != currentAnswer[num]) {
+        field.value = field.value[0].toLowerCase();
+    }
+    else {
+        field.value = field.value[field.value.length - 1].toLowerCase();
+    }
+    currentAnswer[num] = field.value;
+
+    var next = (num+1)%answerLength;
+    var nextField = document.getElementById("answer" + next);
+    nextField.focus();
+
+    // Check answer!!
+    checkAnswer();
+}
+
+function checkAnswer() {
+    var feedbackTag = document.getElementById("feedback");
+    feedbackTag.innerText = "";
+    var currentGuessTxt = currentGuessAsString(currentAnswer);
+    if (currentGuessTxt === correctAnswer) {
+        document.getElementById("answer-tiles").className += " solved";
+        //make all the inputs read only!
+        for (var i = 0; i < correctAnswer.length; i++) {
+            document.getElementById("answer"+i).readOnly = true;
+        }
+        clearErrorFeedback();
+        feedbackTag.innerText = "You got it!";
+    }
+    else if (allLettersFilled(currentAnswer)) {
+        showErrorFeedback(currentGuessTxt, loadedPuzzle);
+    }
+    else {
+        clearErrorFeedback();
+    }
+}
+
+function onAnswerTextChanged(field) {
+    if (field.value.length > correctAnswer.length) {
+        field.value = field.value.substring(0, correctAnswer.length);
+    }
+    if (field.value.length == correctAnswer.length) {
+        if (field.value.toLowerCase() == correctAnswer) {
+            field.className = "solved";
+            field.setAttribute("disabled", "disabled");
+            clearButton.className = "hidden";
+            feedbackTag.innerText = "You got it!";
+        } 
+        else {
+            showErrorFeedback(field.value.toLowerCase(), loadedPuzzle);
+        }
+    }
+    else {
+        clearErrorFeedback();
+    }
+}
 
 /* Guess validation */
 function slotsAreEqual(slotsA, slotsB) {

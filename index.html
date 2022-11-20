@@ -31,8 +31,6 @@
         <a href="/info.html" class="large-button">How to Play</a>
     </div>
 
-
-
     <div class="container bg-dark">
         <div class="title-bar flex"><img src="/img/cow_icon.png"/>
             <div class="flow" >
@@ -42,17 +40,19 @@
         </div>
         <div class="margin-in">
             <div id="puzzle" class="grid"></div>
+
+            <div id="answer-area" class="hidden">
+                <div id="answer-tiles" class="flex margin-top word">
+                    <!-- <input type="text" autocomplete="off" placeholder="Answer" id="answer-input" oninput="onAnswerTextChanged(this);"/> -->
+                    <!-- <button id="clear-button" class="large-button text-light bg-dark-button" onclick="clearAnswer();"> Clear </button> -->
+                </div>
+            <div>
+                <p id="feedback">Check your answer here!</p>
+            </div>
+        </div>
         </div>
 
-        <div id="answer-area" class="hidden">
-            <div class="flex margin-top">
-                <input type="text" autocomplete="off" placeholder="Answer" id="answer-input" oninput="onAnswerTextChanged(this);"/>
-                <button id="clear-button" class="large-button text-light bg-dark-button" onclick="clearAnswer();"> Clear </button>
-            </div>
-            <div>
-                <p id="feedback"></p>
-            </div>
-        </div>
+   
     <div>
 
 
@@ -89,8 +89,6 @@
         </div>
     </div>
 
-
-
 <script type="text/javascript">
 var loadedPuzzle = {};    
 var correctAnswer = "";    
@@ -101,26 +99,6 @@ var clearButton = document.getElementById("clear-button");
 var feedbackTag = document.getElementById("feedback");
 var prevButton = document.getElementById("prev-button");
 var nextButton = document.getElementById("next-button");
-
-function onAnswerTextChanged(field) {
-    if (field.value.length > correctAnswer.length) {
-        field.value = field.value.substring(0, correctAnswer.length);
-    }
-    if (field.value.length == correctAnswer.length) {
-        if (field.value.toLowerCase() == correctAnswer) {
-            field.className = "solved";
-            field.setAttribute("disabled", "disabled");
-            clearButton.className = "hidden";
-            feedbackTag.innerText = "You got it!";
-        } 
-        else {
-            showErrorFeedback(field.value.toLowerCase(), loadedPuzzle);
-        }
-    }
-    else {
-        clearErrorFeedback();
-    }
-}
 
 function clearAnswer() {
     answerField.value = "";

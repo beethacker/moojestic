@@ -332,6 +332,27 @@ button.large-button {
     border: 0.2em solid rgb(var(--clr-correct));
 }
 
+.answer-box {
+    background-color: rgb(var(--clr-dark-accent));
+    color:  rgb(var(--clr-title));
+    border: 0.1em solid rgb(var(--clr-title));
+    border-radius: 0.25em;
+
+    width: 1.25em;
+    height: 1.5em;
+    vertical-align: middle;
+    text-align: center;
+
+    font-size: var(--fs-700);
+    font-family: var(--ff-serif);
+    text-transform: uppercase;
+}
+
+.solved > .answer-box {
+    color:  rgb(var(--clr-correct));
+    border: 0.1em solid rgb(var(--clr-correct));
+}
+
 h1 {
     font-size: var(--fs-800);
 }

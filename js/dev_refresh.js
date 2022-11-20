@@ -5,8 +5,7 @@ if (document.location.href.includes("localhost")) {
     console.log("Enabling refresh!");
     var refreshToken = 0;
     function checkRefresh() {
-        console.log("refresh?");
-        fetch("http://localhost:9000/trigger.txt", {cache: "no-store"}).then(function(response) {
+        fetch("http://localhost:9000/refresh.txt", {cache: "no-store"}).then(function(response) {
             return response.text();
         }).then(function(html) {
             var element = document.getElementById("refresh");
