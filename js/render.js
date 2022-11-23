@@ -1,6 +1,6 @@
 
 var guessDivs = {};
-var currentAnswer = "";
+var currentAnswer = [];
 
 const SlotType = {
     NONE: 0,
@@ -202,7 +202,6 @@ function getExcludedLetters(json) {
     for (var i = 0; i < json["clues"].length; i++) {
         var clue = json["clues"][i];
         var slots = computeSlots(answer, clue);
-        console.log("Slots = " + JSON.stringify(slots));
         for (var j = 0; j < slots.length; j++) {
             if (slots[j] == 0) {
                 result.push(clue[j]);
@@ -224,7 +223,7 @@ function currentGuessAsString(guessArray) {
 
 function allLettersFilled(guessArray) {
     for (var i =  0; i < guessArray.length; i++) {
-        if (guessArray[i].length == 0 || guessArray[i] == " ") {
+        if (guessArray[i] === undefined || guessArray[i].length == 0 || guessArray[i] == " ") {
             return false;
         }
     }
@@ -235,7 +234,7 @@ function onAnswerInput(field) {
     var answerLength= correctAnswer.length;
     var fieldID = field.id;
     var num = Number(fieldID.charAt(fieldID.length-1));
-    if (field.value[0] != currentAnswer[num]) {
+    if (field.value[0].toLowerCase() != currentAnswer[num]) {
         field.value = field.value[0].toLowerCase();
     }
     else {
