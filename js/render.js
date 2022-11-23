@@ -263,6 +263,7 @@ function checkAnswer() {
         }
         clearErrorFeedback();
         feedbackTag.innerText = "You got it!";
+        startVictory();
     }
     else if (allLettersFilled(currentAnswer)) {
         showErrorFeedback(currentGuessTxt, loadedPuzzle);

@@ -541,3 +541,22 @@ h2 {
     /*content:  &#9733;*/
     content: "*";
 }
+
+/* Mark the puzzle area and answer area as relative, so we can try to put a canvas over it! */
+#game-area {
+    position: relative;
+}
+
+
+
+#victory-canvas {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    pointer-events: none;
+}
+
+#victory-canvas.show-victory {
+    width: 100%;
+    height: 100%;
+}

@@ -264,4 +264,8 @@ START=1
 {"answer": "profit", "mode": "slot", "clues":["patent", "empire", "become", "effect"], "level": 1}
 {"answer": "third", "mode": "count", "clues":["model", "wheel", "gland", "twice"], "level": 3}
 {"answer": "proud", "mode": "slot", "clues":["paint", "pupil", "heavy", "shale", "whose"], "level": 1}
-
+{"answer": "stick", "mode": "count", "clues":["shock", "fifth", "knock", "table"], "level": 3}
+{"answer": "asset", "mode": "slot", "clues":["point", "nurse", "radio", "claim", "early", "thief"], "level": 2}
+{"answer": "said", "mode": "count", "clues":["goat", "hiss", "lead"], "level": 4}
+{"answer": "busy", "mode": "count", "clues":["mass", "tune", "nail", "sock", "oven", "only"], "level": 3}
+{"answer": "retain", "mode": "slot", "clues":["finger", "attack"], "level": 2}
