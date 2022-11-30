@@ -1,6 +1,19 @@
+/**
+ * Brodie 2022
+ * 
+ * Handles rendering of the moojestic puzzles, 
+ * as well as processing the puzzle data to determine what to show.
+ * 
+ * Puzzles are given in the form:
+ * 
+ *
+ */
 
-var guessDivs = {};
-var currentAnswer = [];
+ //Global. ¯\_(ツ)_/¯
+
+
+var guessDivs = {}; // Divs storing the "guesses"/clues
+var currentAnswer = [];// Currently typed in answer (over several input cells)
 
 const SlotType = {
     NONE: 0,
@@ -8,6 +21,10 @@ const SlotType = {
     SHUFFLED: 2
 } 
 
+/** 
+ * Generate a letter histogram for a word. 
+ * A map from characters to COUNTS. i.e. 
+ */
 function histogram(word) {
     var result = {};
     for (var i = 0; i < word.length; i++) {
@@ -20,6 +37,11 @@ function histogram(word) {
     return result;
 }
 
+/**
+ * Compute "slots" for each letter in a guess. That is, given the REAL ANSWER and the GUESS,
+ * for each letter in the guess, is it correct or shuffled? This gives the wordle style "SLOT" 
+ * type puzzle. 
+ */ 
 function computeSlots(answer, guess) {
     var histA = histogram(answer);
     var slots = Array(answer.length).fill(SlotType.NONE);
@@ -44,6 +66,10 @@ function computeSlots(answer, guess) {
     return slots;
 }
 
+/**
+ * Once we've computed "slots", we can reduce it to a pair of counts, [#correct,#shuffled].
+ * This is the normal moojestic, mastermind style puzzle. "COUNT" type puzzle.
+ */
 function computeCountsFromSlots(slots) {
     var correct = 0;
     var shuffled = 0;
@@ -61,6 +87,10 @@ function computeCountsFromSlots(slots) {
     return [correct, shuffled];
 }
 
+/**
+ * Convert character codes "#" (correct) and "@" (shuffled) into 
+ * classNames to be colored in CSS.
+ */
 function getColor(c) {
     if (c == "#") {
         return "bg-correct";
@@ -166,7 +196,14 @@ function setPuzzle(n, json) {
         var answerTile = document.createElement("input");
         answerTile.className = "answer-box";
         answerTile.id = "answer" + i;
-        answerTile.setAttribute("oninput", "onAnswerInput(this)");
+
+//https://stackoverflow.com/questions/59426933/key-code-from-keyboardevent-in-android-is-unidentified
+// For keydown we don't get event.key in android. :(
+//  instead, we want to listen to the "input" event like we were doing before. But then we can't handle backspace as good? 
+// or maybe we JUST handle backspace and stop default execution.
+
+        answerTile.addEventListener("keydown", onKeyPress);
+        answerTile.addEventListener("input", onAnswerInput);
         answerDiv.append(answerTile);
     }
 
@@ -230,7 +267,9 @@ function allLettersFilled(guessArray) {
     return true;
 }
 
-function onAnswerInput(field) {
+function onAnswerInput(event) {
+    var field = event.srcElement;
+    console.log(field);
     var answerLength= correctAnswer.length;
     var fieldID = field.id;
     var num = Number(fieldID.charAt(fieldID.length-1));
@@ -243,11 +282,47 @@ function onAnswerInput(field) {
     currentAnswer[num] = field.value;
 
     var next = (num+1)%answerLength;
+    console.log("Next is" + next);
     var nextField = document.getElementById("answer" + next);
     nextField.focus();
 
     // Check answer!!
     checkAnswer();
+}
+
+function onKeyPress(e) {
+    var field = e.srcElement;
+    var id = field.id;   //TODO can I jam on my own fields? Javascript'll let me do whatever, right?
+    var num = Number(id.charAt(id.length-1));
+    var next = num;
+    var changed = false;
+
+    if (e.key === "Backspace" || e.key === "Delete") {
+        if (field.value.length > 0) {
+            e.srcElement.value = "";
+            currentAnswer[num] = "";
+            changed = true;
+        }
+        else if (e.key === "Backspace" && next > 0) {
+            next--;
+            changed = true;
+        }
+    }
+    else if (e.key === "ArrowLeft") {
+        next--;
+        changed = true;
+    }
+    else if (e.key === "ArrowRight") {
+        next++;
+        changed = true;
+    }
+
+    if (changed) {
+        e.preventDefault();
+        next = (next+currentAnswer.length) % currentAnswer.length;
+        document.getElementById("answer" + next).focus();
+        checkAnswer();
+    }
 }
 
 function checkAnswer() {
