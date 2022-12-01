@@ -346,6 +346,8 @@ button.large-button {
     font-size: var(--fs-700);
     font-family: var(--ff-serif);
     text-transform: uppercase;
+
+    padding: 0;//Or letters don't show up on safari!
 }
 
 .solved > .answer-box {

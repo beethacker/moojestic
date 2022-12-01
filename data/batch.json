@@ -269,3 +269,13 @@ START=1
 {"answer": "said", "mode": "count", "clues":["goat", "hiss", "lead"], "level": 4}
 {"answer": "busy", "mode": "count", "clues":["mass", "tune", "nail", "sock", "oven", "only"], "level": 3}
 {"answer": "retain", "mode": "slot", "clues":["finger", "attack"], "level": 2}
+{"answer": "claw", "mode": "count", "clues":["beef", "fold", "coil", "come", "bath", "west"], "level": 4}
+{"answer": "rice", "mode": "count", "clues":["road", "each", "wall", "easy", "comb", "fire"], "level": 3, "star":true}
+{"answer": "search", "mode": "slot", "clues":["family", "fusion", "instep", "change"], "level": 2}
+{"answer": "spot", "mode": "count", "clues":["rule", "oval", "left", "pool", "most"], "level": 3}
+{"answer": "study", "mode": "slot", "clues":["group", "dress", "plant"], "level": 3, "star":true}
+{"answer": "range", "mode": "count", "clues":["angry", "frame"], "level": 4, "star":true}
+{"answer": "flesh", "mode": "count", "clues":["petal", "serum", "grain", "forty", "south", "cross"], "level": 5}
+{"answer": "happy", "mode": "slot", "clues":["which", "shame", "pound", "sepal", "grass", "tired"], "level": 2}
+{"answer": "fume", "mode": "count", "clues":["push", "fire", "whom", "road", "salt", "send"], "level": 4}
+{"answer": "swing", "mode": "slot", "clues":["lever", "zebra", "wedge", "shelf", "pupil"], "level": 3, "star":true}
