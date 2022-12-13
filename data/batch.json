@@ -279,3 +279,10 @@ START=1
 {"answer": "happy", "mode": "slot", "clues":["which", "shame", "pound", "sepal", "grass", "tired"], "level": 2}
 {"answer": "fume", "mode": "count", "clues":["push", "fire", "whom", "road", "salt", "send"], "level": 4}
 {"answer": "swing", "mode": "slot", "clues":["lever", "zebra", "wedge", "shelf", "pupil"], "level": 3, "star":true}
+{"answer": "tray", "mode": "count", "clues":["here", "hate", "xray"], "level": 1}
+{"answer": "prick", "mode": "slot", "clues":["fruit", "group", "sorry", "happy", "snake"], "level": 1}
+{"answer": "cough", "mode": "count", "clues":["flame", "fifty", "cause", "slide", "guard", "sheep"], "level": 4, "star": true}
+{"answer": "roof", "mode": "count", "clues":["ever", "with", "lung", "hold", "four", "park"], "level": 2}
+{"answer": "crush", "mode": "slot", "clues":["clean", "vodka", "point", "local", "doubt", "loose"], "level": 1}
+{"answer": "dark", "mode": "count", "clues":["knot", "they", "sand", "load", "head", "rise"], "level": 4}
+{"answer": "cheese", "mode": "slot", "clues":["omelet", "whisky", "vortex", "august"], "level": 2}
