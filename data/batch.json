@@ -286,3 +286,7 @@ START=1
 {"answer": "crush", "mode": "slot", "clues":["clean", "vodka", "point", "local", "doubt", "loose"], "level": 1}
 {"answer": "dark", "mode": "count", "clues":["knot", "they", "sand", "load", "head", "rise"], "level": 4}
 {"answer": "cheese", "mode": "slot", "clues":["omelet", "whisky", "vortex", "august"], "level": 2}
+{"answer": "bath", "mode": "count", "clues":["from", "best", "that"], "level": 2}
+{"answer": "flight", "mode": "slot", "clues":["burned", "screen", "uptake", "bottle", "degree"], "level": 4, "star": true}
+{"answer": "wave", "mode": "count", "clues":["have", "axis", "inch", "zinc", "door", "view"], "level": 1}
+{"answer": "hyena", "mode": "count", "clues":["right", "gross", "shell", "those", "color", "among"], "level": 4}
