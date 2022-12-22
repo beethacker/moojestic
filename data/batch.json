@@ -290,3 +290,12 @@ START=1
 {"answer": "flight", "mode": "slot", "clues":["burned", "screen", "uptake", "bottle", "degree"], "level": 4, "star": true}
 {"answer": "wave", "mode": "count", "clues":["have", "axis", "inch", "zinc", "door", "view"], "level": 1}
 {"answer": "hyena", "mode": "count", "clues":["right", "gross", "shell", "those", "color", "among"], "level": 4}
+{"answer": "input", "mode": "slot", "clues":["slope", "table", "might", "thick"], "level": 3, "star": true}
+{"answer": "week", "mode": "count", "clues":["bill", "bird", "wind", "more", "stop", "keep"], "level": 2}
+{"answer": "peace", "mode": "count", "clues":["sharp", "sugar", "after", "tooth", "scrap", "valve"], "level": 4, "star": true}
+{"answer": "wasted", "mode": "slot", "clues":["medium", "liquid", "frozen", "always", "screen", "tailor"], "level": 1}
+{"answer": "early", "mode": "count", "clues":["stick", "paper", "scale", "prose"], "level": 5}
+{"answer": "week", "mode": "count", "clues":["bill", "bird", "wind", "more", "stop", "keep"], "level": 2}
+{"answer": "coal", "mode": "count", "clues":["once", "free", "hill", "soil", "neat"], "level": 3, "star": true}
+{"answer": "eight", "mode": "slot", "clues":["noted", "salad", "skirt", "waste", "fifty"], "level": 1}
+{"answer": "nose", "mode": "count", "clues":["much", "knot", "rich", "self", "ship", "blue"], "level": 3}
