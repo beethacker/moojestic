@@ -299,3 +299,9 @@ START=1
 {"answer": "coal", "mode": "count", "clues":["once", "free", "hill", "soil", "neat"], "level": 3, "star": true}
 {"answer": "eight", "mode": "slot", "clues":["noted", "salad", "skirt", "waste", "fifty"], "level": 1}
 {"answer": "nose", "mode": "count", "clues":["much", "knot", "rich", "self", "ship", "blue"], "level": 3}
+{"answer": "keeper", "mode": "slot", "clues":["funnel", "stress", "budget", "locker", "tailor"], "level": 2}
+{"answer": "eight", "mode": "slot", "clues":["pupil", "shale", "which", "event"], "level": 1}
+{"answer": "hotel", "mode": "count", "clues":["sound", "large", "light", "large", "prick", "hurry"], "level": 5, "star":true}
+{"answer": "owner", "mode": "slot", "clues":["liter", "drain", "royal", "crack"], "level": 3}
+{"answer": "verse", "mode": "count", "clues":["lever", "miner", "nasty", "liter", "sleep"], "level": 3, "star":true}
+{"answer": "after", "mode": "slot", "clues":["skirt", "least", "error", "opera", "thief"], "level": 2}
