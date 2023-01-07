@@ -305,3 +305,8 @@ START=1
 {"answer": "owner", "mode": "slot", "clues":["liter", "drain", "royal", "crack"], "level": 3}
 {"answer": "verse", "mode": "count", "clues":["lever", "miner", "nasty", "liter", "sleep"], "level": 3, "star":true}
 {"answer": "after", "mode": "slot", "clues":["skirt", "least", "error", "opera", "thief"], "level": 2}
+{"answer": "lens", "mode": "count", "clues":["plug", "less", "news"], "level": 1}
+{"answer": "story", "mode": "count", "clues":["start", "angle", "death", "sight", "layer"], "level": 4, "star":true}
+{"answer": "agent", "mode": "slot", "clues":["which", "awake", "smash", "tight", "fruit", "drink"], "level": 1}
+{"answer": "onto", "mode": "count", "clues":["baby", "name", "root"], "level": 2}
+{"answer": "normal", "mode": "slot", "clues":["please", "reflux", "whisky", "letter", "handle"], "level": 5, "star":true}
