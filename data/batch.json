@@ -310,3 +310,9 @@ START=1
 {"answer": "agent", "mode": "slot", "clues":["which", "awake", "smash", "tight", "fruit", "drink"], "level": 1}
 {"answer": "onto", "mode": "count", "clues":["baby", "name", "root"], "level": 2}
 {"answer": "normal", "mode": "slot", "clues":["please", "reflux", "whisky", "letter", "handle"], "level": 5, "star":true}
+{"answer": "tube", "mode": "count", "clues":["foot", "whom", "june", "road", "turn", "burn"], "level": 2}
+{"answer": "across", "mode": "count", "clues":["simple", "chance", "length", "advice", "future", "modern"], "level": 3, "star":true}
+{"answer": "toast", "mode": "count", "clues":["radio", "trick", "taste"], "level": 2, "star":true}
+{"answer": "oval", "mode": "count", "clues":["load", "horn", "will", "spot"], "level": 2}
+{"answer": "cast", "mode": "count", "clues":["copy", "wise", "hiss", "were", "fear", "test"], "level": 2}
+{"answer": "place", "mode": "count", "clues":["match", "shake", "field", "plate"], "level": 1, "star":true}
