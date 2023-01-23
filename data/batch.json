@@ -319,3 +319,7 @@ START=1
 {"answer": "host", "mode": "count", "clues":["turn", "high", "heat", "worm", "wool"], "level": 3}
 {"answer": "basin", "mode": "slot", "clues":["crush", "clock", "drain", "salad"], "level": 1}
 {"answer": "modern", "mode": "slot", "clues":["travel", "orange", "bridge", "clever", "flower", "bottle"], "level": 4}
+{"answer": "ratio", "mode": "slot", "clues":["habit", "least", "flint", "flame", "after"], "level": 2}
+{"answer": "lead", "mode": "count", "clues":["beak", "rate", "cast", "head", "make", "gill"], "level": 2}
+{"answer": "coil", "mode": "count", "clues":["area", "girl", "loan", "pump", "cave"], "level": 3, "star":true}
+{"answer": "warm", "mode": "count", "clues":["undo", "dive", "door", "hiss", "slow", "term"], "level": 3, "star":true}
