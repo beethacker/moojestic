@@ -323,3 +323,6 @@ START=1
 {"answer": "lead", "mode": "count", "clues":["beak", "rate", "cast", "head", "make", "gill"], "level": 2}
 {"answer": "coil", "mode": "count", "clues":["area", "girl", "loan", "pump", "cave"], "level": 3, "star":true}
 {"answer": "warm", "mode": "count", "clues":["undo", "dive", "door", "hiss", "slow", "term"], "level": 3, "star":true}
+{"answer": "error", "mode": "slot", "clues":["steam", "spark", "pound", "group", "angle", "drift"], "level": 1}
+{"answer": "nest", "mode": "count", "clues":["salt", "mind", "star", "mast", "cell"], "level": 3, "star":true}
+{"answer": "great", "mode": "count", "clues":["curve", "doubt", "right", "paper", "range"], "level": 3, "star":true}
