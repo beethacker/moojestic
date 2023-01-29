@@ -327,3 +327,6 @@ START=1
 {"answer": "nest", "mode": "count", "clues":["salt", "mind", "star", "mast", "cell"], "level": 3, "star":true}
 {"answer": "great", "mode": "count", "clues":["curve", "doubt", "right", "paper", "range"], "level": 3, "star":true}
 {"answer": "ball", "mode": "count", "clues":["navy", "over", "help", "made", "bill"], "level": 1}
+{"answer": "solid", "mode": "count", "clues":["third", "spark", "crack", "fixed", "cloth", "wreck"], "level": 5, "star":true}
+{"answer": "stain", "mode": "slot", "clues":["blood", "power", "index", "quack", "pedal", "tight"], "level": 1}
+{"answer": "farm", "mode": "count", "clues":["cast", "join", "life", "mind", "girl"], "level": 5}
