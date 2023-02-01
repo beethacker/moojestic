@@ -330,3 +330,8 @@ START=1
 {"answer": "solid", "mode": "count", "clues":["third", "spark", "crack", "fixed", "cloth", "wreck"], "level": 5, "star":true}
 {"answer": "stain", "mode": "slot", "clues":["blood", "power", "index", "quack", "pedal", "tight"], "level": 1}
 {"answer": "farm", "mode": "count", "clues":["cast", "join", "life", "mind", "girl"], "level": 5}
+{"answer": "hill", "mode": "count", "clues":["horn", "bird", "belt", "dear", "list", "till"], "level": 1}
+{"answer": "each", "mode": "count", "clues":["case", "salt", "ship", "rich"], "level": 2, "star":true}
+{"answer": "woman", "mode": "slot", "clues":["cough", "daily", "vodka", "wrist"], "level": 1}
+{"answer": "piano", "mode": "slot", "clues":["ruler", "sweet", "miner", "inlet", "laugh", "offer"], "level": 3, "star":true}
+{"answer": "opera", "mode": "count", "clues":["nerve", "stone", "sepal", "price", "round"], "level": 5, "star":true}
