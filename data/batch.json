@@ -335,3 +335,5 @@ START=1
 {"answer": "woman", "mode": "slot", "clues":["cough", "daily", "vodka", "wrist"], "level": 1}
 {"answer": "piano", "mode": "slot", "clues":["ruler", "sweet", "miner", "inlet", "laugh", "offer"], "level": 3, "star":true}
 {"answer": "opera", "mode": "count", "clues":["nerve", "stone", "sepal", "price", "round"], "level": 5, "star":true}
+{"answer": "woman", "mode": "count", "clues":["these", "metal", "fixed"], "level": 1}
+{"answer": "bone", "mode": "count", "clues":["page", "beak", "bark", "once"], "level": 2}
