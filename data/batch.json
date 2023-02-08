@@ -337,3 +337,5 @@ START=1
 {"answer": "opera", "mode": "count", "clues":["nerve", "stone", "sepal", "price", "round"], "level": 5, "star":true}
 {"answer": "woman", "mode": "count", "clues":["these", "metal", "fixed"], "level": 1}
 {"answer": "bone", "mode": "count", "clues":["page", "beak", "bark", "once"], "level": 2}
+{"answer": "boot", "mode": "count", "clues":["beat", "neck", "wind", "rice", "wire", "food"], "level": 1}
+{"answer": "child", "mode": "count", "clues":["green", "offer", "flood", "cover", "beard", "thick"], "level": 3, "star":true}
