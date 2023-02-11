@@ -339,3 +339,4 @@ START=1
 {"answer": "bone", "mode": "count", "clues":["page", "beak", "bark", "once"], "level": 2}
 {"answer": "boot", "mode": "count", "clues":["beat", "neck", "wind", "rice", "wire", "food"], "level": 1}
 {"answer": "child", "mode": "count", "clues":["green", "offer", "flood", "cover", "beard", "thick"], "level": 3, "star":true}
+{"answer": "high", "mode": "count", "clues":["star", "like", "such", "hath"], "level": 2}
