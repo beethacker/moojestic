@@ -340,3 +340,6 @@ START=1
 {"answer": "boot", "mode": "count", "clues":["beat", "neck", "wind", "rice", "wire", "food"], "level": 1}
 {"answer": "child", "mode": "count", "clues":["green", "offer", "flood", "cover", "beard", "thick"], "level": 3, "star":true}
 {"answer": "high", "mode": "count", "clues":["star", "like", "such", "hath"], "level": 2}
+{"answer": "lunch", "mode": "count", "clues":["water", "mouth", "royal", "thief", "chief", "owner"], "level": 4, "star":true}
+{"answer": "cause", "mode": "slot", "clues":["flint", "sport", "maybe", "human"], "level": 1}
+{"answer": "wine", "mode": "count", "clues":["work", "stop", "line", "rice"], "level": 1}
