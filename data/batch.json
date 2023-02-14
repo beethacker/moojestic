@@ -343,3 +343,4 @@ START=1
 {"answer": "lunch", "mode": "count", "clues":["water", "mouth", "royal", "thief", "chief", "owner"], "level": 4, "star":true}
 {"answer": "cause", "mode": "slot", "clues":["flint", "sport", "maybe", "human"], "level": 1}
 {"answer": "wine", "mode": "count", "clues":["work", "stop", "line", "rice"], "level": 1}
+{"answer": "snow", "mode": "count", "clues":["dull", "wall", "town", "undo", "baby", "cast"], "level": 3}
