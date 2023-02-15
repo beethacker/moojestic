@@ -344,3 +344,6 @@ START=1
 {"answer": "cause", "mode": "slot", "clues":["flint", "sport", "maybe", "human"], "level": 1}
 {"answer": "wine", "mode": "count", "clues":["work", "stop", "line", "rice"], "level": 1}
 {"answer": "snow", "mode": "count", "clues":["dull", "wall", "town", "undo", "baby", "cast"], "level": 3}
+{"answer": "ruler", "mode": "slot", "clues":["input", "watch", "petal", "berry"], "level": 3, "star":true}
+{"answer": "much", "mode": "count", "clues":["easy", "like", "milk", "back", "lazy", "wood"], "level": 3, "star":true}
+{"answer": "match", "mode": "count", "clues":["touch", "fifth", "mania"], "level": 4, "star":true}
