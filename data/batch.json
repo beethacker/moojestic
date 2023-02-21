@@ -350,3 +350,7 @@ START=1
 {"answer": "poor", "mode": "count", "clues":["meal", "wine", "good", "gray", "shut", "pool"], "level": 1, "star":true}
 {"answer": "cart", "mode": "count", "clues":["fool", "were", "nest", "kiss", "tear", "back"], "level": 3, "star":true}
 {"answer": "front", "mode": "count", "clues":["fired", "noise", "gross", "flint"], "level": 3, "star":true}
+{"answer": "loss", "mode": "count", "clues":["mist", "loud", "them", "root"], "level": 3}
+{"answer": "hunt", "mode": "count", "clues":["tune", "lace", "slip", "burn", "dead", "then"], "level": 2}
+{"answer": "lock", "mode": "count", "clues":["lung", "tune", "fowl", "turn", "kind", "neck"], "level": 3, "star":true}
+{"answer": "lock", "mode": "count", "clues":["loose", "spade", "night", "crush", "input", "proud"], "level": 5, "star":true}
