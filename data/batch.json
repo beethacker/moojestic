@@ -354,3 +354,7 @@ START=1
 {"answer": "hunt", "mode": "count", "clues":["tune", "lace", "slip", "burn", "dead", "then"], "level": 2}
 {"answer": "lock", "mode": "count", "clues":["lung", "tune", "fowl", "turn", "kind", "neck"], "level": 3, "star":true}
 {"answer": "grand", "mode": "count", "clues":["loose", "spade", "night", "crush", "input", "proud"], "level": 5, "star":true}
+{"answer": "dust", "mode": "count", "clues":["dive", "down", "seen", "acid", "most"], "level": 2, "star":true}
+{"answer": "liver", "mode": "count", "clues":["habit", "linen", "thing", "cover"], "level": 1}
+{"answer": "saving", "mode": "slot", "clues":["keeper", "monkey", "second", "flight", "collar", "victim"], "level": 1}
+{"answer": "horse", "mode": "count", "clues":["index", "forty", "humor", "noise"], "level": 3}
