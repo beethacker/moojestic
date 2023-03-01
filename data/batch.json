@@ -358,3 +358,5 @@ START=1
 {"answer": "liver", "mode": "count", "clues":["habit", "linen", "thing", "cover"], "level": 1}
 {"answer": "saving", "mode": "slot", "clues":["keeper", "monkey", "second", "flight", "collar", "victim"], "level": 1}
 {"answer": "horse", "mode": "count", "clues":["index", "forty", "humor", "noise"], "level": 3}
+{"answer": "seal", "mode": "count", "clues":["said", "cart", "your", "bill", "wash", "fire"], "level": 3, "star":true}
+{"answer": "back", "mode": "count", "clues":["load", "blow", "unit", "heat", "less", "cent"], "level": 3, "star":true}
