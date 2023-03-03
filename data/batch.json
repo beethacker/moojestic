@@ -360,3 +360,9 @@ START=1
 {"answer": "horse", "mode": "count", "clues":["index", "forty", "humor", "noise"], "level": 3}
 {"answer": "seal", "mode": "count", "clues":["said", "cart", "your", "bill", "wash", "fire"], "level": 3, "star":true}
 {"answer": "back", "mode": "count", "clues":["load", "blow", "unit", "heat", "less", "cent"], "level": 3, "star":true}
+{"answer": "madam", "mode": "count", "clues":["mixed", "meter", "which", "order", "actor", "smell"], "level": 4, "star":true}
+{"answer": "straw", "mode": "count", "clues":["awake", "chest", "knife", "steel"], "level": 2, "star":false}
+{"answer": "juice", "mode": "count", "clues":["heart", "judge", "snake", "march", "stain", "force"], "level": 3, "star":true}
+{"answer": "stiff", "mode": "count", "clues":["prick", "dance", "crush", "inlet", "front", "towel"], "level": 5, "star":true}
+{"answer": "harbor", "mode": "slot", "clues":["budget", "clever", "tailor"], "level": 3, "star":true}
+{"answer": "term", "mode": "count", "clues":["take", "soil", "full", "mark", "mean"], "level": 5, "star":true}
