@@ -366,3 +366,4 @@ START=1
 {"answer": "stiff", "mode": "count", "clues":["prick", "dance", "crush", "inlet", "front", "towel"], "level": 5, "star":true}
 {"answer": "harbor", "mode": "slot", "clues":["budget", "clever", "tailor"], "level": 3, "star":true}
 {"answer": "term", "mode": "count", "clues":["take", "soil", "full", "mark", "mean"], "level": 5, "star":true}
+{"answer": "real", "mode": "count", "clues":["test", "park", "mast", "size", "late"], "level": 2, "star":true}
