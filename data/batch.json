@@ -367,3 +367,9 @@ START=1
 {"answer": "harbor", "mode": "slot", "clues":["budget", "clever", "tailor"], "level": 3, "star":true}
 {"answer": "term", "mode": "count", "clues":["take", "soil", "full", "mark", "mean"], "level": 5, "star":true}
 {"answer": "real", "mode": "count", "clues":["test", "park", "mast", "size", "late"], "level": 2, "star":true}
+{"answer": "guard", "mode": "count", "clues":["shale", "actor", "space", "wrist", "queen", "guide"], "level": 3, "star":true}
+{"answer": "stage", "mode": "count", "clues":["great", "empty", "pence", "ruler"], "level": 4}
+{"answer": "factor", "mode": "slot", "clues":["search", "copper", "bottom", "muscle"], "level": 2}
+{"answer": "weak", "mode": "count", "clues":["look", "cell", "pain", "soup", "mill", "wise"], "level": 2}
+{"answer": "wise", "mode": "count", "clues":["room", "list", "both", "whom", "ship", "ever"], "level": 2, "star":true}
+
