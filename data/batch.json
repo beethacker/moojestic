@@ -372,4 +372,8 @@ START=1
 {"answer": "factor", "mode": "slot", "clues":["search", "copper", "bottom", "muscle"], "level": 2}
 {"answer": "weak", "mode": "count", "clues":["look", "cell", "pain", "soup", "mill", "wise"], "level": 2}
 {"answer": "wise", "mode": "count", "clues":["room", "list", "both", "whom", "ship", "ever"], "level": 2, "star":true}
-
+{"answer": "sign", "mode": "count", "clues":["tide", "some", "been", "mile"], "level": 4, "star":true}
+{"answer": "would", "mode": "slot", "clues":["prick", "touch", "cloth", "tower"], "level": 1}
+{"answer": "sign", "mode": "count", "clues":["four", "tear", "sent", "jury", "sign", "less"], "level": 3, "star":true}
+{"answer": "result", "mode": "slot", "clues":["search", "butter", "travel"], "level": 2, "star":true}
+{"answer": "widow", "mode": "count", "clues":["peace", "which", "about", "crush", "early", "again"], "level": 5, "star":true}
