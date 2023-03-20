@@ -377,3 +377,7 @@ START=1
 {"answer": "sign", "mode": "count", "clues":["four", "tear", "sent", "jury", "sign", "less"], "level": 3, "star":true}
 {"answer": "result", "mode": "slot", "clues":["search", "butter", "travel"], "level": 2, "star":true}
 {"answer": "widow", "mode": "count", "clues":["peace", "which", "about", "crush", "early", "again"], "level": 5, "star":true}
+{"answer": "have", "mode": "count", "clues":["rust", "taxi", "hair", "lame", "book", "even"], "level": 2}
+{"answer": "sight", "mode": "slot", "clues":["share", "shade", "hedge", "world", "stage"], "level": 1}
+{"answer": "fresh", "mode": "count", "clues":["flesh", "prime"], "level": 1}
+{"answer": "soil", "mode": "count", "clues":["hunt", "once", "goes", "warm", "lens", "tail"], "level": 3, "star":true}
