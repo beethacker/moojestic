@@ -384,5 +384,6 @@ START=1
 {"answer": "sheep", "mode": "count", "clues":["ruler", "stick", "which", "sport", "hedge"], "level": 4, "star":true}
 {"answer": "male", "mode": "count", "clues":["call", "sign", "tree", "five", "gave", "mast"], "level": 2, "star":true}
 {"answer": "doubt", "mode": "count", "clues":["agent", "vapor", "third", "stage", "blade", "april"], "level": 5, "star":true}
+{"answer": "touch", "mode": "slot", "clues":["check", "curve", "river", "short"], "level": 1}
 {"answer": "peace", "mode": "slot", "clues":["mouth", "paste", "again", "doubt", "blade"], "level": 2, "star":true}
 
