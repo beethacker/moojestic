@@ -386,4 +386,14 @@ START=1
 {"answer": "doubt", "mode": "count", "clues":["agent", "vapor", "third", "stage", "blade", "april"], "level": 5, "star":true}
 {"answer": "touch", "mode": "slot", "clues":["check", "curve", "river", "short"], "level": 1}
 {"answer": "peace", "mode": "slot", "clues":["mouth", "paste", "again", "doubt", "blade"], "level": 2, "star":true}
-
+{"answer": "claim", "mode": "count", "clues":["smoke", "shave", "brick", "shock", "sepal", "shame"], "level": 5, "star":true}
+{"answer": "ditch", "mode": "count", "clues":["nasty", "watch", "range", "false", "awake", "judge"], "level": 2}
+{"answer": "place", "mode": "count", "clues":["cover", "claim", "cloth", "about", "would", "night"], "level": 5, "star": true}
+{"answer": "tray", "mode": "count", "clues":["hole", "tree", "lime", "drop", "hand", "copy"], "level": 2}
+{"answer": "water", "mode": "count", "clues":["fever", "toast", "valve", "screw", "focus"], "level": 4, "star":true}
+{"answer": "left", "mode": "count", "clues":["gone", "fish", "post", "tube", "lame", "less"], "level": 3, "star":true}
+{"answer": "beef", "mode": "count", "clues":["fork", "bent", "purr", "july", "half", "rise"], "level": 2}
+{"answer": "feeble", "mode": "count", "clues":["result", "expert", "wasted", "poetry"], "level": 5, "star": true}
+{"answer": "vortex", "mode": "slot", "clues":["vessel", "monday", "driver"], "level": 3, "star":true}
+{"answer": "juice", "mode": "slot", "clues":["knife", "screw", "house", "shake", "lunch"], "level": 5}
+{"answer": "polish", "mode": "slot", "clues":["circus", "monday", "threat", "ticket", "export"], "level": 2}
