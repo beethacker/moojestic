@@ -395,5 +395,12 @@ START=1
 {"answer": "beef", "mode": "count", "clues":["fork", "bent", "purr", "july", "half", "rise"], "level": 2}
 {"answer": "feeble", "mode": "count", "clues":["result", "expert", "wasted", "poetry"], "level": 5, "star": true}
 {"answer": "vortex", "mode": "slot", "clues":["vessel", "monday", "driver"], "level": 3, "star":true}
-{"answer": "juice", "mode": "slot", "clues":["knife", "screw", "house", "shake", "lunch"], "level": 5}
 {"answer": "polish", "mode": "slot", "clues":["circus", "monday", "threat", "ticket", "export"], "level": 2}
+{"answer": "that", "mode": "count", "clues":["soft", "heat", "done", "lift", "slip", "tear"], "level": 2, "star":true}
+{"answer": "total", "mode": "count", "clues":["april", "loose", "their", "fruit", "today", "night"], "level": 3}
+{"answer": "cotton", "mode": "slot", "clues":["though", "keeper", "circus", "retail", "broken"], "level": 2}
+{"answer": "plug", "mode": "count", "clues":["clay", "bang", "load", "spit"], "level": 4}
+{"answer": "thorax", "mode": "slot", "clues":["street", "camera", "letter", "cheese", "growth"], "level": 2}
+{"answer": "twin", "mode": "count", "clues":["mark", "spit", "what", "safe", "land"], "level": 4, "star":true}
+
+
