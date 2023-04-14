@@ -402,5 +402,5 @@ START=1
 {"answer": "plug", "mode": "count", "clues":["clay", "bang", "load", "spit"], "level": 4}
 {"answer": "thorax", "mode": "slot", "clues":["street", "camera", "letter", "cheese", "growth"], "level": 2}
 {"answer": "twin", "mode": "count", "clues":["mark", "spit", "what", "safe", "land"], "level": 4, "star":true}
-
-
+{"answer": "rain", "mode": "count", "clues":["step", "home", "dive", "iron", "name"], "level": 1, "star":true}
+{"answer": "inner", "mode": "count", "clues":["sport", "inlet", "tongs", "green"], "level": 4, "star":true}
