@@ -118,7 +118,7 @@ function onLoadFail(n) {
 
 if (window.location.search.startsWith("?puzzle=")) {
     displayPuzzle = parseInt(window.location.search.substring(8));
-    if (displayPuzzle <= todaysPuzzle) {
+    if (displayPuzzle <= maxPuzzles) {
         loadPuzzleNumber(displayPuzzle, onLoadFail);
     }
     else {
@@ -129,7 +129,7 @@ else {
     loadPuzzleNumber(todaysPuzzle, onLoadFail);
 }
 
-if (displayPuzzle < todaysPuzzle) {
+if (displayPuzzle < maxPuzzles) {
     nextButton.setAttribute("href", "/index.html?puzzle=" + (displayPuzzle+1));
 }
 else {

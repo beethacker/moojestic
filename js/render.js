@@ -12,6 +12,7 @@
  //Global. ¯\_(ツ)_/¯
 
 
+var maxPuzzles = 405; // Number of puzzles in the directory! Should automate updates to this...
 var guessDivs = {}; // Divs storing the "guesses"/clues
 var currentAnswer = [];// Currently typed in answer (over several input cells)
 
